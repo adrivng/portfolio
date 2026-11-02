@@ -1,0 +1,364 @@
+
+/* ==================================================
+   1. FUENTES
+================================================== */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins-300.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins-400.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/poppins-600.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ==================================================
+   2. CONFIGURACIÓN GENERAL
+================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #1A1A1A;
+}
+
+
+/* ==================================================
+   3. CONTENEDOR PRINCIPAL
+================================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* ==================================================
+   4. HEADER Y NAVEGACIÓN
+================================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #E5E5E0;
+
+    /* Header fijo al desplazarse */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #FFFFFF;
+}
+
+.logo-container {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2563EB;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1A1A1A;
+    font-size: 0.9rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #2563EB;
+}
+
+
+/* ==================================================
+   5. INFORMACIÓN DE SECCIONES
+================================================== */
+
+.section-header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.section-header-info span:first-child {
+    color: #2563EB;
+}
+
+.section-header-info span:last-child {
+    color: #666666;
+}
+
+
+/* ==================================================
+   6. INICIO / HERO
+================================================== */
+
+#inicio {
+    padding-top: 50px;
+}
+
+.hero-content-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons a,
+.hero-footer-info a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.hero-footer-info {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+}
+
+
+/* ==================================================
+   7. EXPERIENCIA
+================================================== */
+
+.experience-content {
+    padding: 30px 0 60px;
+}
+
+.experience-heading,
+.technologies-heading {
+    margin-bottom: 45px;
+}
+
+.experience-heading h2,
+.technologies-heading h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.experience-heading p,
+.technologies-heading p {
+    color: #666666;
+    max-width: 600px;
+    line-height: 1.7;
+}
+
+.experience-item {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 40px;
+    padding: 35px 0;
+    border-top: 1px solid #E5E5E0;
+}
+
+.experience-company h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.experience-company span,
+.experience-role span {
+    font-size: 0.8rem;
+    color: #777777;
+}
+
+.experience-role {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.experience-role h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.experience-details ul {
+    padding-left: 18px;
+    margin: 0;
+}
+
+.experience-details li {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 12px;
+}
+
+/* Etiquetas de tecnologías utilizadas en experiencia */
+
+.experience-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.experience-tags span {
+    padding: 6px 12px;
+    border: 1px solid #E5E5E0;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #555555;
+}
+
+
+/* ==================================================
+   8. TECNOLOGÍAS
+================================================== */
+
+.technologies-content {
+    padding: 30px 0 60px;
+}
+
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 50px;
+}
+
+.technology-category {
+    padding: 25px 0;
+    border-top: 1px solid #E5E5E0;
+}
+
+.technology-category h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.technology-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.technology-list span {
+    padding: 8px 14px;
+    border: 1px solid #E5E5E0;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    color: #555555;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.technology-list span:hover {
+    border-color: #2563EB;
+    color: #2563EB;
+}
+
+
+/* ==================================================
+   9. FOOTER
+================================================== */
+
+footer {
+    border-top: 1px solid #E5E5E0;
+    padding: 25px 0;
+    color: #666666;
+    font-size: 0.85rem;
+}
+
+
+/* ==================================================
+   10. RESPONSIVE
+================================================== */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Información de secciones */
+
+    .section-header-info {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* Inicio */
+
+    .hero-content-grid {
+        flex-direction: column;
+    }
+
+    /* Experiencia */
+
+    .experience-item {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .experience-role {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Tecnologías */
+
+    .technologies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+nav a.active {
+    color: #2563EB;
+    font-weight: 600;
+}
