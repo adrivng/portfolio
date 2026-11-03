@@ -21,7 +21,15 @@
                 >_
             </div>
 
-            <nav>
+            <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="primary-navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav id="primary-navigation">
+                <a href="#inicio">Inicio</a>
                 <a href="#sobre-mi">Sobre mí</a>
                 <a href="#experiencia">Experiencia</a>
                 <a href="#tecnologias">Tecnologías</a>
@@ -46,32 +54,22 @@
                 <div class="hero-content-grid">
 
                     <div class="hero-left">
-
                         <h1>Adrian Cardenas Lamas</h1>
-
-                        <div class="hero-buttons">
-                            <a href="#proyectos">Ver proyectos ↗</a>
-                            <a href="#">Ver CV ↗</a>
-                        </div>
-
                     </div>
 
                     <div class="hero-right">
-
                         <h2>Full Stack Developer</h2>
-
                         <p>
                             Servicios bien diseñados.
                             Integraciones claras.
                             Código que puede evolucionar.
                         </p>
-
                     </div>
 
-                </div>
-
-                <div class="hero-footer-info">
-                    <a href="#experiencia">Trayectoria ↓</a>
+                    <div class="hero-buttons">
+                        <a href="#proyectos">Ver proyectos ↗</a>
+                        <a href="#">Ver CV ↗</a>
+                    </div>
                 </div>
 
             </section>
@@ -436,7 +434,36 @@
                     <span>Lima, Perú · UTC-5</span>
                 </div>
 
-                <!-- Aquí irán tus medios de contacto -->
+                <div class="contact-content">
+                    <div class="contact-heading">
+                        <h2>Hablemos</h2>
+                        <p>Cuéntame sobre tu proyecto, una oportunidad laboral o cualquier consulta.</p>
+                    </div>
+
+                    <form class="contact-form" id="contact-form">
+                        <div class="contact-field">
+                            <label for="contact-nombres">Nombres</label>
+                            <input id="contact-nombres" name="nombres" type="text" autocomplete="given-name" required>
+                        </div>
+
+                        <div class="contact-field">
+                            <label for="contact-apellidos">Apellidos</label>
+                            <input id="contact-apellidos" name="apellidos" type="text" autocomplete="family-name" required>
+                        </div>
+
+                        <div class="contact-field contact-field-full">
+                            <label for="contact-correo">Correo electrónico</label>
+                            <input id="contact-correo" name="correo" type="email" autocomplete="email" required>
+                        </div>
+
+                        <div class="contact-field contact-field-full">
+                            <label for="contact-mensaje">Mensaje</label>
+                            <textarea id="contact-mensaje" name="mensaje" rows="6" required></textarea>
+                        </div>
+
+                        <button class="contact-submit" type="submit">Enviar mensaje</button>
+                    </form>
+                </div>
 
             </section>
 
@@ -455,6 +482,10 @@
         </div>
 
     </footer>
+
+    <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">
+        <span aria-hidden="true">↑</span>
+    </a>
 
     <script>
 
@@ -497,6 +528,67 @@
         sections.forEach((section) => {
             observer.observe(section);
         });
+
+        const header = document.querySelector('header');
+        const navToggle = document.querySelector('.nav-toggle');
+
+        function setMenuOpen(isOpen) {
+            header.classList.toggle('nav-open', isOpen);
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        }
+
+        navToggle.addEventListener('click', () => {
+            setMenuOpen(navToggle.getAttribute('aria-expanded') !== 'true');
+        });
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                setMenuOpen(false);
+            });
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && header.classList.contains('nav-open')) {
+                setMenuOpen(false);
+                navToggle.focus();
+            }
+        });
+
+        window.matchMedia('(min-width: 769px)').addEventListener('change', () => {
+            setMenuOpen(false);
+        });
+
+        const contactForm = document.querySelector('#contact-form');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const recipient = String.fromCharCode(
+                103, 105, 97, 110, 99, 97, 114, 100, 101, 110, 97, 115, 49, 56
+            ) + '@gmail.com';
+            const formData = new FormData(contactForm);
+            const fullName = `${formData.get('nombres')} ${formData.get('apellidos')}`;
+            const subject = `Contacto desde el portafolio: ${fullName}`;
+            const body = [
+                `Nombre: ${fullName}`,
+                `Correo: ${formData.get('correo')}`,
+                '',
+                formData.get('mensaje')
+            ].join('\n');
+
+            window.location.href =
+                `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        const backToTop = document.querySelector('.back-to-top');
+
+        function updateBackToTop() {
+            backToTop.classList.toggle('is-visible', window.scrollY > 300);
+        }
+
+        window.addEventListener('scroll', updateBackToTop, { passive: true });
+        updateBackToTop();
 
     </script>
 </body>
