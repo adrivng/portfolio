@@ -370,16 +370,14 @@ main > section {
     padding-bottom: 50px;
 }
 
-/* ELEMENTO CON IMAGEN */
 .technology-item {
     display: inline-flex;
     align-items: center;
     gap: 8px;
 }
 
-/* IMAGEN DE TECNOLOGÍA */
 .technology-item img {
-    width: 50px;
-    height: 50px;
+    width: 24px;
+    height: 24px;
     object-fit: contain;
 }
