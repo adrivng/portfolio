@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Adrian Cardenas Lamas | Full Stack Developer</title>
+    <title data-i18n="page.title">Adrian Cardenas Lamas | Full Stack Developer</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -21,21 +21,35 @@
                 >_
             </div>
 
+            <nav id="primary-navigation">
+                <a href="#inicio" data-i18n="nav.home">Inicio</a>
+                <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+                <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+                <a href="#tecnologias" data-i18n="nav.technologies">Tecnologías</a>
+                <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+                <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+            </nav>
+
+            <div class="header-controls">
+                <div class="language-controls" role="group" aria-label="Idioma"
+                    data-i18n-aria-label="languageSelector">
+                    <button class="header-control language-control" type="button" data-language="es"
+                        lang="es" aria-pressed="true">ES</button>
+                    <button class="header-control language-control" type="button" data-language="en"
+                        lang="en" aria-pressed="false">EN</button>
+                </div>
+                <button class="header-control" id="theme-toggle" type="button" aria-pressed="false">
+                    Oscuro
+                </button>
+                <span class="control-status" id="language-status" role="status" aria-live="polite"></span>
+            </div>
+
             <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"
                 aria-controls="primary-navigation">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-
-            <nav id="primary-navigation">
-                <a href="#inicio">Inicio</a>
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#tecnologias">Tecnologías</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
 
         </header>
 
@@ -47,8 +61,8 @@
             <section id="inicio">
 
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / INICIO</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.home">PORTAFOLIO / INICIO</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <div class="hero-content-grid">
@@ -60,15 +74,13 @@
                     <div class="hero-right">
                         <h2>Full Stack Developer</h2>
                         <p>
-                            Servicios bien diseñados.
-                            Integraciones claras.
-                            Código que puede evolucionar.
+                            <span data-i18n="home.description" data-i18n-html>Servicios bien diseñados.<br>Integraciones claras.<br>Código que puede evolucionar.</span>
                         </p>
                     </div>
 
                     <div class="hero-buttons">
-                        <a href="#proyectos">Ver proyectos ↗</a>
-                        <a href="#">Ver CV ↗</a>
+                        <a href="#proyectos" data-i18n="home.projects">Ver proyectos ↗</a>
+                        <a href="#" data-i18n="home.resume">Ver CV ↗</a>
                     </div>
                 </div>
 
@@ -81,17 +93,17 @@
             <section id="sobre-mi">
 
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / SOBRE MÍ</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.about">PORTAFOLIO / SOBRE MÍ</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <div class="about-content">
 
                     <!-- PRESENTACIÓN PROFESIONAL -->
                     <div class="about-intro">
-                        <h2>Un poco sobre mí</h2>
+                        <h2 data-i18n="about.introTitle">Un poco sobre mí</h2>
 
-                        <p>
+                        <p data-i18n="about.intro" data-i18n-html>
                             Soy <strong>Desarrollador de Sistemas de Información</strong>,
                             con experiencia en el análisis, desarrollo e implementación
                             de soluciones tecnológicas para empresas. Me interesa conectar
@@ -102,9 +114,9 @@
 
                     <!-- HISTORIA PERSONAL -->
                     <div class="about-story">
-                        <h3>¿Cómo conocí este mundo?</h3>
+                        <h3 data-i18n="about.storyTitle">¿Cómo conocí este mundo?</h3>
 
-                        <p>
+                        <p data-i18n="about.story">
                             Mi interés por la tecnología nació de la curiosidad por
                             entender cómo funcionan las cosas y cómo pueden convertirse
                             en soluciones útiles. Con el tiempo, esa curiosidad se
@@ -112,8 +124,8 @@
                             y desarrollar mis propias soluciones.
                         </p>
 
-                        <p>
-                            Con 21 años, me considero una persona autodidacta,
+                        <p data-i18n="about.profile" data-i18n-html data-birth-date="2005-07-31">
+                            Con <span data-age></span> años, me considero una persona autodidacta,
                             adaptable y comprometida. Disfruto enfrentar nuevos retos,
                             explorar diferentes herramientas y salir de mi zona de
                             confort para adquirir nuevos conocimientos.
@@ -122,9 +134,9 @@
 
                     <!-- FORMACIÓN Y APRENDIZAJE -->
                     <div class="about-learning">
-                        <h3>Mi camino de aprendizaje</h3>
+                        <h3 data-i18n="about.learningTitle">Mi camino de aprendizaje</h3>
 
-                        <p>
+                        <p data-i18n="about.learningStart" data-i18n-html>
                             A los 18 años decidí profundizar por mi cuenta en el mundo
                             de la tecnología. Comencé con un libro de programación y,
                             gracias al acceso a <strong>Platzi</strong> que me brindó
@@ -132,7 +144,7 @@
                             despertaron aún más mi interés por seguir aprendiendo.
                         </p>
 
-                        <p>
+                        <p data-i18n="about.education" data-i18n-html>
                             A los 19 años inicié mi formación profesional en
                             <strong>IDAT</strong>, donde, mediante docentes exigentes
                             y una formación orientada a la práctica, fortalecí mis
@@ -155,15 +167,15 @@
             <section id="experiencia">
 
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / EXPERIENCIA</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.experience">PORTAFOLIO / EXPERIENCIA</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <div class="experience-content">
 
                     <div class="experience-heading">
-                        <h2>Experiencia profesional</h2>
-                        <p>
+                        <h2 data-i18n="experience.title">Experiencia profesional</h2>
+                        <p data-i18n="experience.summary">
                             Mi trayectoria en el desarrollo de soluciones tecnológicas,
                             gestión de sistemas y optimización de procesos empresariales.
                         </p>
@@ -174,42 +186,42 @@
 
                         <div class="experience-company">
                             <h3>CLUB VIDATUR S.R.L.</h3>
-                            <span>Miraflores, Lima</span>
+                            <span data-i18n="location.miraflores">Miraflores, Lima</span>
                         </div>
 
                         <div class="experience-details">
                             <div class="experience-role">
-                                <h4>Asistente de Sistemas e Información</h4>
-                                <span>Ene 2026 — Oct 2026</span>
+                                <h4 data-i18n="experience.vidatur.role">Asistente de Sistemas e Información</h4>
+                                <span data-i18n="experience.vidatur.dates">Ene 2026 — Oct 2026</span>
                             </div>
 
                             <ul>
-                                <li>
+                                <li data-i18n="experience.vidatur.web">
                                     Desarrollo e implementación de soluciones web de extremo
                                     a extremo con PHP, JavaScript, HTML/CSS, Bootstrap,
                                     AJAX y SQL/MySQL, desde el análisis de requerimientos
                                     hasta la integración frontend-backend y mantenimiento.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.vidatur.backoffice">
                                     Diseño y desarrollo de un backoffice para la gestión
                                     de reservas, incorporando módulos de liquidación,
                                     inventarios, reportería y seguimiento operativo.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.vidatur.cms">
                                     Implementación de un CMS interno para gestionar y
                                     publicar paquetes turísticos mediante formularios,
                                     automatizando la carga de imágenes, precios y contenido.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.vidatur.suppliers">
                                     Desarrollo de una herramienta web para centralizar
                                     información de proveedores, facilitando las consultas
                                     de los equipos comercial y operativo.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.vidatur.travel">
                                     Gestión operativa de Travel Compositor, administrando
                                     procesos comerciales B2B, cotizaciones, reservas,
                                     inventarios, márgenes, markup, postventa y reportería.
@@ -227,34 +239,34 @@
 
                         <div class="experience-company">
                             <h3>IMPORT TRADING T & O S.A.C.</h3>
-                            <span>La Victoria, Lima</span>
+                            <span data-i18n="location.lavictoria">La Victoria, Lima</span>
                         </div>
 
                         <div class="experience-details">
                             <div class="experience-role">
-                                <h4>Sistemas y Soporte Tecnológico</h4>
-                                <span>Sep 2024 — Nov 2025</span>
+                                <h4 data-i18n="experience.import.role">Sistemas y Soporte Tecnológico</h4>
+                                <span data-i18n="experience.import.dates">Sep 2024 — Nov 2025</span>
                             </div>
 
                             <ul>
-                                <li>
+                                <li data-i18n="experience.import.solutions">
                                     Análisis, desarrollo e implementación de soluciones
                                     tecnológicas para atender las necesidades del área
                                     comercial y mejorar los sistemas internos.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.import.infrastructure">
                                     Administración y mantenimiento de servidores y redes,
                                     recuperación básica de datos y gestión de incidencias.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.import.support">
                                     Mantenimiento preventivo y correctivo de equipos y
                                     soporte presencial y remoto a usuarios en hardware,
                                     software, aplicaciones y conectividad.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.import.testing">
                                     Ejecución de pruebas funcionales y técnicas,
                                     aplicación de criterios de seguridad informática
                                     y capacitación a usuarios.
@@ -271,35 +283,35 @@
 
                         <div class="experience-company">
                             <h3>CONFECCIONES DEPOL</h3>
-                            <span>San Juan de Lurigancho, Lima</span>
+                            <span data-i18n="location.sjl">San Juan de Lurigancho, Lima</span>
                         </div>
 
                         <div class="experience-details">
                             <div class="experience-role">
-                                <h4>Programador y Control de Datos</h4>
-                                <span>Dic 2023 — Jun 2024</span>
+                                <h4 data-i18n="experience.depol.role">Programador y Control de Datos</h4>
+                                <span data-i18n="experience.depol.dates">Dic 2023 — Jun 2024</span>
                             </div>
 
                             <ul>
-                                <li>
+                                <li data-i18n="experience.depol.tools">
                                     Desarrollo y mantenimiento de herramientas web internas
                                     para digitalizar procesos de inventarios, pedidos
                                     y flujo de productos.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.depol.databases">
                                     Gestión y actualización de bases de datos de clientes,
                                     productos y ventas, asegurando la integridad
                                     y disponibilidad de la información.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.depol.automation">
                                     Automatización de registros mediante formularios web
                                     y hojas de cálculo, optimizando el control de
                                     producción y stock.
                                 </li>
 
-                                <li>
+                                <li data-i18n="experience.depol.reports">
                                     Elaboración de reportes operativos y seguimiento
                                     de pedidos, mejorando la trazabilidad del inventario.
                                 </li>
@@ -319,14 +331,14 @@
             <!-- TECNOLOGÍAS -->
             <section id="tecnologias">
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / TECNOLOGÍAS</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.technologies">PORTAFOLIO / TECNOLOGÍAS</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <div class="technologies-content">
                     <div class="technologies-heading">
-                        <h2>TECNOLOGÍAS</h2>
-                        <p>
+                        <h2 data-i18n="technologies.title">TECNOLOGÍAS</h2>
+                        <p data-i18n="technologies.summary">
                             Herramientas y tecnologías que utilizo para desarrollar
                             soluciones, gestionar información y construir aplicaciones.
                         </p>
@@ -352,7 +364,7 @@
                         </article>
 
                         <article class="technology-category">
-                            <h3>Bases de datos</h3>
+                            <h3 data-i18n="technologies.databases">Bases de datos</h3>
                             <div class="technology-list">
                                 <span class="technology-item"><img src="./images/tecnologias/postgre.webp" alt="">PostgreSQL</span>
                                 <span class="technology-item"><img src="./images/tecnologias/mysql.webp" alt="">MySQL</span>
@@ -380,7 +392,7 @@
                         </article>
 
                         <article class="technology-category">
-                            <h3>Herramientas y control de versiones</h3>
+                            <h3 data-i18n="technologies.tools">Herramientas y control de versiones</h3>
                             <div class="technology-list">
                                 <span class="technology-item"><img src="./images/tecnologias/git.webp" alt="">Git</span>
                                 <span class="technology-item"><img src="./images/tecnologias/github.webp"
@@ -391,7 +403,7 @@
                         </article>
 
                         <article class="technology-category">
-                            <h3>APIs y testing</h3>
+                            <h3 data-i18n="technologies.apis">APIs y testing</h3>
                             <div class="technology-list">
                                 <span class="technology-item"><img src="./images/tecnologias/postman.webp"
                                         alt="">Postman</span>
@@ -401,7 +413,7 @@
                         </article>
 
                         <article class="technology-category">
-                            <h3>Otros</h3>
+                            <h3 data-i18n="technologies.other">Otros</h3>
                             <div class="technology-list">
                                 <span class="technology-item"><img src="./images/tecnologias/kotlin.webp"
                                         alt="">Kotlin</span>
@@ -417,8 +429,8 @@
             <section id="proyectos">
 
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / PROYECTOS</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.projects">PORTAFOLIO / PROYECTOS</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <!-- Aquí irán tus proyectos -->
@@ -430,38 +442,38 @@
             <section id="contacto">
 
                 <div class="section-header-info">
-                    <span>PORTAFOLIO / CONTACTO</span>
-                    <span>Lima, Perú · UTC-5</span>
+                    <span data-i18n="section.contact">PORTAFOLIO / CONTACTO</span>
+                    <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
                 </div>
 
                 <div class="contact-content">
                     <div class="contact-heading">
-                        <h2>Hablemos</h2>
-                        <p>Cuéntame sobre tu proyecto, una oportunidad laboral o cualquier consulta.</p>
+                        <h2 data-i18n="contact.title">Hablemos</h2>
+                        <p data-i18n="contact.summary">Cuéntame sobre tu proyecto, una oportunidad laboral o cualquier consulta.</p>
                     </div>
 
                     <form class="contact-form" id="contact-form">
                         <div class="contact-field">
-                            <label for="contact-nombres">Nombres</label>
+                            <label for="contact-nombres" data-i18n="contact.firstName">Nombres</label>
                             <input id="contact-nombres" name="nombres" type="text" autocomplete="given-name" required>
                         </div>
 
                         <div class="contact-field">
-                            <label for="contact-apellidos">Apellidos</label>
+                            <label for="contact-apellidos" data-i18n="contact.lastName">Apellidos</label>
                             <input id="contact-apellidos" name="apellidos" type="text" autocomplete="family-name" required>
                         </div>
 
                         <div class="contact-field contact-field-full">
-                            <label for="contact-correo">Correo electrónico</label>
+                            <label for="contact-correo" data-i18n="contact.email">Correo electrónico</label>
                             <input id="contact-correo" name="correo" type="email" autocomplete="email" required>
                         </div>
 
                         <div class="contact-field contact-field-full">
-                            <label for="contact-mensaje">Mensaje</label>
+                            <label for="contact-mensaje" data-i18n="contact.message">Mensaje</label>
                             <textarea id="contact-mensaje" name="mensaje" rows="6" required></textarea>
                         </div>
 
-                        <button class="contact-submit" type="submit">Enviar mensaje</button>
+                        <button class="contact-submit" type="submit" data-i18n="contact.submit">Enviar mensaje</button>
                     </form>
                 </div>
 
@@ -483,7 +495,7 @@
 
     </footer>
 
-    <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">
+    <a class="back-to-top" href="#inicio" aria-label="Volver al inicio" data-i18n-aria-label="backToTop">
         <span aria-hidden="true">↑</span>
     </a>
 
@@ -535,7 +547,10 @@
         function setMenuOpen(isOpen) {
             header.classList.toggle('nav-open', isOpen);
             navToggle.setAttribute('aria-expanded', String(isOpen));
-            navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            const menuLabels = document.documentElement.lang === 'en'
+                ? ['Close menu', 'Open menu']
+                : ['Cerrar menú', 'Abrir menú'];
+            navToggle.setAttribute('aria-label', isOpen ? menuLabels[0] : menuLabels[1]);
         }
 
         navToggle.addEventListener('click', () => {
@@ -569,10 +584,11 @@
             ) + '@gmail.com';
             const formData = new FormData(contactForm);
             const fullName = `${formData.get('nombres')} ${formData.get('apellidos')}`;
-            const subject = `Contacto desde el portafolio: ${fullName}`;
+            const isEnglish = document.documentElement.lang === 'en';
+            const subject = `${isEnglish ? 'Portfolio contact' : 'Contacto desde el portafolio'}: ${fullName}`;
             const body = [
-                `Nombre: ${fullName}`,
-                `Correo: ${formData.get('correo')}`,
+                `${isEnglish ? 'Name' : 'Nombre'}: ${fullName}`,
+                `${isEnglish ? 'Email' : 'Correo'}: ${formData.get('correo')}`,
                 '',
                 formData.get('mensaje')
             ].join('\n');
@@ -591,6 +607,7 @@
         updateBackToTop();
 
     </script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,267 @@
+{
+  "lang": "en",
+  "ruta": "en/",
+  "patrones": [],
+  "reemplazos": [
+    { "clave": "languageSelector", "es": "Idioma", "en": "Language" },
+    {
+      "clave": "page.title",
+      "es": "Adrian Cardenas Lamas | Full Stack Developer",
+      "en": "Adrian Cardenas Lamas | Full Stack Developer"
+    },
+    { "clave": "nav.home", "es": "Inicio", "en": "Home" },
+    { "clave": "nav.about", "es": "Sobre mí", "en": "About me" },
+    { "clave": "nav.experience", "es": "Experiencia", "en": "Experience" },
+    { "clave": "nav.technologies", "es": "Tecnologías", "en": "Technologies" },
+    { "clave": "nav.projects", "es": "Proyectos", "en": "Projects" },
+    { "clave": "nav.contact", "es": "Contacto", "en": "Contact" },
+    {
+      "clave": "section.home",
+      "es": "PORTAFOLIO / INICIO",
+      "en": "PORTFOLIO / HOME"
+    },
+    {
+      "clave": "section.about",
+      "es": "PORTAFOLIO / SOBRE MÍ",
+      "en": "PORTFOLIO / ABOUT ME"
+    },
+    {
+      "clave": "section.experience",
+      "es": "PORTAFOLIO / EXPERIENCIA",
+      "en": "PORTFOLIO / EXPERIENCE"
+    },
+    {
+      "clave": "section.technologies",
+      "es": "PORTAFOLIO / TECNOLOGÍAS",
+      "en": "PORTFOLIO / TECHNOLOGIES"
+    },
+    {
+      "clave": "section.projects",
+      "es": "PORTAFOLIO / PROYECTOS",
+      "en": "PORTFOLIO / PROJECTS"
+    },
+    {
+      "clave": "section.contact",
+      "es": "PORTAFOLIO / CONTACTO",
+      "en": "PORTFOLIO / CONTACT"
+    },
+    {
+      "clave": "profile.location",
+      "es": "Lima, Perú · UTC-5",
+      "en": "Lima, Peru · UTC-5"
+    },
+    {
+      "clave": "location.miraflores",
+      "es": "Miraflores, Lima",
+      "en": "Miraflores, Lima"
+    },
+    {
+      "clave": "location.lavictoria",
+      "es": "La Victoria, Lima",
+      "en": "La Victoria, Lima"
+    },
+    {
+      "clave": "location.sjl",
+      "es": "San Juan de Lurigancho, Lima",
+      "en": "San Juan de Lurigancho, Lima"
+    },
+    {
+      "clave": "home.description",
+      "es": "Servicios bien diseñados.<br>Integraciones claras.<br>Código que puede evolucionar.",
+      "en": "Well-designed services.<br>Clear integrations.<br>Code built to evolve."
+    },
+    {
+      "clave": "home.projects",
+      "es": "Ver proyectos ↗",
+      "en": "View projects ↗"
+    },
+    { "clave": "home.resume", "es": "Ver CV ↗", "en": "View resume ↗" },
+    {
+      "clave": "about.introTitle",
+      "es": "Un poco sobre mí",
+      "en": "A little about me"
+    },
+    {
+      "clave": "about.intro",
+      "es": "Soy <strong>Desarrollador de Sistemas de Información</strong>, con experiencia en el análisis, desarrollo e implementación de soluciones tecnológicas para empresas. Me interesa conectar la tecnología con las necesidades del negocio, optimizando procesos y facilitando la gestión de la información.",
+      "en": "I am an <strong>Information Systems Developer</strong>, with experience analyzing, developing, and implementing technology solutions for businesses. I am interested in connecting technology with business needs, optimizing processes, and making information management easier."
+    },
+    {
+      "clave": "about.storyTitle",
+      "es": "¿Cómo conocí este mundo?",
+      "en": "How did I get into technology?"
+    },
+    {
+      "clave": "about.story",
+      "es": "Mi interés por la tecnología nació de la curiosidad por entender cómo funcionan las cosas y cómo pueden convertirse en soluciones útiles. Con el tiempo, esa curiosidad se transformó en una motivación por aprender, experimentar y desarrollar mis propias soluciones.",
+      "en": "My interest in technology began with curiosity about how things work and how they can become useful solutions. Over time, that curiosity grew into a desire to learn, experiment, and build my own solutions."
+    },
+    {
+      "clave": "about.profile",
+      "es": "Con <span data-age></span> años, me considero una persona autodidacta, adaptable y comprometida. Disfruto enfrentar nuevos retos, explorar diferentes herramientas y salir de mi zona de confort para adquirir nuevos conocimientos.",
+      "en": "At <span data-age></span>, I consider myself self-taught, adaptable, and committed. I enjoy taking on new challenges, exploring different tools, and stepping outside my comfort zone to gain new knowledge."
+    },
+    {
+      "clave": "about.learningTitle",
+      "es": "Mi camino de aprendizaje",
+      "en": "My learning journey"
+    },
+    {
+      "clave": "about.learningStart",
+      "es": "A los 18 años decidí profundizar por mi cuenta en el mundo de la tecnología. Comencé con un libro de programación y, gracias al acceso a <strong>Platzi</strong> que me brindó un familiar cercano, descubrí nuevas áreas y recursos que despertaron aún más mi interés por seguir aprendiendo.",
+      "en": "At 18, I decided to explore technology on my own. I started with a programming book and, thanks to access to <strong>Platzi</strong> provided by a close relative, discovered new fields and resources that made me even more eager to keep learning."
+    },
+    {
+      "clave": "about.education",
+      "es": "A los 19 años inicié mi formación profesional en <strong>IDAT</strong>, donde, mediante docentes exigentes y una formación orientada a la práctica, fortalecí mis conocimientos en desarrollo de sistemas, bases de datos, análisis y gestión de proyectos. Esta etapa me permitió dar el salto al entorno laboral y prepararme para afrontar proyectos y desafíos de mayor complejidad.",
+      "en": "At 19, I began my professional studies at <strong>IDAT</strong>. With demanding instructors and hands-on training, I strengthened my knowledge of systems development, databases, analysis, and project management. This experience helped me enter the workforce and prepare for more complex projects and challenges."
+    },
+    {
+      "clave": "experience.title",
+      "es": "Experiencia profesional",
+      "en": "Professional experience"
+    },
+    {
+      "clave": "experience.summary",
+      "es": "Mi trayectoria en el desarrollo de soluciones tecnológicas, gestión de sistemas y optimización de procesos empresariales.",
+      "en": "My experience developing technology solutions, managing systems, and improving business processes."
+    },
+    {
+      "clave": "experience.vidatur.role",
+      "es": "Asistente de Sistemas e Información",
+      "en": "Systems and Information Assistant"
+    },
+    {
+      "clave": "experience.vidatur.dates",
+      "es": "Ene 2026 — Oct 2026",
+      "en": "Jan 2026 — Oct 2026"
+    },
+    {
+      "clave": "experience.vidatur.web",
+      "es": "Desarrollo e implementación de soluciones web de extremo a extremo con PHP, JavaScript, HTML/CSS, Bootstrap, AJAX y SQL/MySQL, desde el análisis de requerimientos hasta la integración frontend-backend y mantenimiento.",
+      "en": "Developed and implemented end-to-end web solutions with PHP, JavaScript, HTML/CSS, Bootstrap, AJAX, and SQL/MySQL, from requirements analysis through frontend-backend integration and maintenance."
+    },
+    {
+      "clave": "experience.vidatur.backoffice",
+      "es": "Diseño y desarrollo de un backoffice para la gestión de reservas, incorporando módulos de liquidación, inventarios, reportería y seguimiento operativo.",
+      "en": "Designed and developed a back-office system for reservation management, including settlement, inventory, reporting, and operational tracking modules."
+    },
+    {
+      "clave": "experience.vidatur.cms",
+      "es": "Implementación de un CMS interno para gestionar y publicar paquetes turísticos mediante formularios, automatizando la carga de imágenes, precios y contenido.",
+      "en": "Implemented an internal CMS to manage and publish travel packages through forms, automating image, pricing, and content uploads."
+    },
+    {
+      "clave": "experience.vidatur.suppliers",
+      "es": "Desarrollo de una herramienta web para centralizar información de proveedores, facilitando las consultas de los equipos comercial y operativo.",
+      "en": "Developed a web tool to centralize supplier information and make it easier for sales and operations teams to find what they need."
+    },
+    {
+      "clave": "experience.vidatur.travel",
+      "es": "Gestión operativa de Travel Compositor, administrando procesos comerciales B2B, cotizaciones, reservas, inventarios, márgenes, markup, postventa y reportería.",
+      "en": "Managed day-to-day operations in Travel Compositor, including B2B sales processes, quotes, reservations, inventory, margins, markup, after-sales support, and reporting."
+    },
+    {
+      "clave": "experience.import.role",
+      "es": "Sistemas y Soporte Tecnológico",
+      "en": "Systems and Technology Support"
+    },
+    {
+      "clave": "experience.import.dates",
+      "es": "Sep 2024 — Nov 2025",
+      "en": "Sep 2024 — Nov 2025"
+    },
+    {
+      "clave": "experience.import.solutions",
+      "es": "Análisis, desarrollo e implementación de soluciones tecnológicas para atender las necesidades del área comercial y mejorar los sistemas internos.",
+      "en": "Analyzed, developed, and implemented technology solutions to meet sales team needs and improve internal systems."
+    },
+    {
+      "clave": "experience.import.infrastructure",
+      "es": "Administración y mantenimiento de servidores y redes, recuperación básica de datos y gestión de incidencias.",
+      "en": "Managed and maintained servers and networks, performed basic data recovery, and handled incidents."
+    },
+    {
+      "clave": "experience.import.support",
+      "es": "Mantenimiento preventivo y correctivo de equipos y soporte presencial y remoto a usuarios en hardware, software, aplicaciones y conectividad.",
+      "en": "Performed preventive and corrective equipment maintenance and provided in-person and remote support for hardware, software, applications, and connectivity."
+    },
+    {
+      "clave": "experience.import.testing",
+      "es": "Ejecución de pruebas funcionales y técnicas, aplicación de criterios de seguridad informática y capacitación a usuarios.",
+      "en": "Performed functional and technical testing, applied information security practices, and trained users."
+    },
+    {
+      "clave": "experience.depol.role",
+      "es": "Programador y Control de Datos",
+      "en": "Programmer and Data Controller"
+    },
+    {
+      "clave": "experience.depol.dates",
+      "es": "Dic 2023 — Jun 2024",
+      "en": "Dec 2023 — Jun 2024"
+    },
+    {
+      "clave": "experience.depol.tools",
+      "es": "Desarrollo y mantenimiento de herramientas web internas para digitalizar procesos de inventarios, pedidos y flujo de productos.",
+      "en": "Developed and maintained internal web tools to digitize inventory, order, and product-flow processes."
+    },
+    {
+      "clave": "experience.depol.databases",
+      "es": "Gestión y actualización de bases de datos de clientes, productos y ventas, asegurando la integridad y disponibilidad de la información.",
+      "en": "Managed and updated customer, product, and sales databases, ensuring information integrity and availability."
+    },
+    {
+      "clave": "experience.depol.automation",
+      "es": "Automatización de registros mediante formularios web y hojas de cálculo, optimizando el control de producción y stock.",
+      "en": "Automated records with web forms and spreadsheets, improving production and stock tracking."
+    },
+    {
+      "clave": "experience.depol.reports",
+      "es": "Elaboración de reportes operativos y seguimiento de pedidos, mejorando la trazabilidad del inventario.",
+      "en": "Prepared operational reports and tracked orders, improving inventory traceability."
+    },
+    {
+      "clave": "technologies.title",
+      "es": "TECNOLOGÍAS",
+      "en": "TECHNOLOGIES"
+    },
+    {
+      "clave": "technologies.summary",
+      "es": "Herramientas y tecnologías que utilizo para desarrollar soluciones, gestionar información y construir aplicaciones.",
+      "en": "Tools and technologies I use to develop solutions, manage information, and build applications."
+    },
+    {
+      "clave": "technologies.databases",
+      "es": "Bases de datos",
+      "en": "Databases"
+    },
+    {
+      "clave": "technologies.tools",
+      "es": "Herramientas y control de versiones",
+      "en": "Tools and version control"
+    },
+    {
+      "clave": "technologies.apis",
+      "es": "APIs y testing",
+      "en": "APIs and testing"
+    },
+    { "clave": "technologies.other", "es": "Otros", "en": "Other" },
+    { "clave": "contact.title", "es": "Hablemos", "en": "Let's talk" },
+    {
+      "clave": "contact.summary",
+      "es": "Cuéntame sobre tu proyecto, una oportunidad laboral o cualquier consulta.",
+      "en": "Tell me about your project, a job opportunity, or any questions you have."
+    },
+    { "clave": "contact.firstName", "es": "Nombres", "en": "First name" },
+    { "clave": "contact.lastName", "es": "Apellidos", "en": "Last name" },
+    {
+      "clave": "contact.email",
+      "es": "Correo electrónico",
+      "en": "Email address"
+    },
+    { "clave": "contact.message", "es": "Mensaje", "en": "Message" },
+    { "clave": "contact.submit", "es": "Enviar mensaje", "en": "Send message" },
+    { "clave": "backToTop", "es": "Volver al inicio", "en": "Back to top" }
+  ]
+}
