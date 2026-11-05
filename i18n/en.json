@@ -67,8 +67,8 @@
     },
     {
       "clave": "home.description",
-      "es": "Servicios bien diseñados.<br>Integraciones claras.<br>Código que puede evolucionar.",
-      "en": "Well-designed services.<br>Clear integrations.<br>Code built to evolve."
+      "es": "Técnico en Desarrollo de Sistemas de Información con más de 3 años de experiencia en desarrollo de software, análisis de requerimientos y gestión de sistemas. Busco aportar mis conocimientos en el diseño e implementación de soluciones tecnológicas, optimización de procesos, gestión de información y mejora de operaciones empresariales, asumiendo nuevos desafíos que impulsen mi crecimiento profesional.",
+      "en": "Systems Development Technician with over 3 years of experience in software development, requirements analysis, and systems management. I aim to apply my knowledge to designing and implementing technology solutions, optimizing processes, managing information, and improving business operations while taking on new challenges that support my professional growth."
     },
     {
       "clave": "home.projects",
@@ -76,6 +76,26 @@
       "en": "View projects ↗"
     },
     { "clave": "home.resume", "es": "Ver CV ↗", "en": "View resume ↗" },
+    {
+      "clave": "about.tabs.title",
+      "es": "Conoce más sobre mí",
+      "en": "More about me"
+    },
+    {
+      "clave": "about.tabs.profile",
+      "es": "Perfil",
+      "en": "Profile"
+    },
+    {
+      "clave": "about.tabs.story",
+      "es": "Historia",
+      "en": "Story"
+    },
+    {
+      "clave": "about.tabs.learning",
+      "es": "Formación",
+      "en": "Education"
+    },
     {
       "clave": "about.introTitle",
       "es": "Un poco sobre mí",
