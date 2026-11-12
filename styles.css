@@ -298,6 +298,11 @@ nav a:hover {
 }
 
 .section-header-info span:first-child {
+    color: var(--color-muted);
+    transition: color 0.2s ease;
+}
+
+.section-header-info.is-active span:first-child {
     color: var(--color-accent);
 }
 
@@ -568,6 +573,10 @@ footer {
     width: 20px;
     height: 20px;
     fill: currentColor;
+}
+
+.dark-mode .footer-social-links a {
+    color: var(--color-text);
 }
 
 
