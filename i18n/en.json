@@ -12,7 +12,7 @@
     { "clave": "nav.home", "es": "Inicio", "en": "Home" },
     { "clave": "nav.about", "es": "Sobre mí", "en": "About me" },
     { "clave": "nav.experience", "es": "Experiencia", "en": "Experience" },
-    { "clave": "nav.technologies", "es": "Tecnologías", "en": "Technologies" },
+    { "clave": "nav.technologies", "es": "Conocimientos", "en": "Knowledge" },
     { "clave": "nav.projects", "es": "Proyectos", "en": "Projects" },
     { "clave": "nav.contact", "es": "Contacto", "en": "Contact" },
     {
@@ -32,8 +32,8 @@
     },
     {
       "clave": "section.technologies",
-      "es": "PORTAFOLIO / TECNOLOGÍAS",
-      "en": "PORTFOLIO / TECHNOLOGIES"
+      "es": "PORTAFOLIO / CONOCIMIENTOS",
+      "en": "PORTFOLIO / KNOWLEDGE"
     },
     {
       "clave": "section.projects",
@@ -72,10 +72,10 @@
     },
     {
       "clave": "home.projects",
-      "es": "Ver proyectos ↗",
-      "en": "View projects ↗"
+      "es": "Ver proyectos",
+      "en": "View projects"
     },
-    { "clave": "home.resume", "es": "Ver CV ↗", "en": "View resume ↗" },
+    { "clave": "home.resume", "es": "Ver CV", "en": "View resume" },
     {
       "clave": "about.tabs.title",
       "es": "Conoce más sobre mí",
@@ -243,13 +243,13 @@
     },
     {
       "clave": "technologies.title",
-      "es": "TECNOLOGÍAS",
-      "en": "TECHNOLOGIES"
+      "es": "CONOCIMIENTOS",
+      "en": "KNOWLEDGE"
     },
     {
       "clave": "technologies.summary",
-      "es": "Herramientas y tecnologías que utilizo para desarrollar soluciones, gestionar información y construir aplicaciones.",
-      "en": "Tools and technologies I use to develop solutions, manage information, and build applications."
+      "es": "Conocimientos y herramientas que aplico para desarrollar soluciones, gestionar información y construir aplicaciones.",
+      "en": "Knowledge and tools I use to develop solutions, manage information, and build applications."
     },
     {
       "clave": "technologies.databases",

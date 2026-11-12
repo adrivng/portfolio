@@ -52,9 +52,6 @@ function savePreference(key, value) {
 function updateTheme(isDark) {
     const isEnglish = document.documentElement.lang === 'en';
     document.documentElement.classList.toggle('dark-mode', isDark);
-    themeButton.textContent = isDark
-        ? (isEnglish ? 'Light' : 'Claro')
-        : (isEnglish ? 'Dark' : 'Oscuro');
     themeButton.setAttribute('aria-pressed', String(isDark));
     themeButton.setAttribute(
         'aria-label',

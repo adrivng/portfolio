@@ -26,7 +26,7 @@
           <a href="#inicio" data-i18n="nav.home">Inicio</a>
           <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
           <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
-          <a href="#tecnologias" data-i18n="nav.technologies">Tecnologías</a>
+          <a href="#conocimientos" data-i18n="nav.technologies">Conocimientos</a>
           <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
           <a href="#contacto" data-i18n="nav.contact">Contacto</a>
         </nav>
@@ -43,27 +43,57 @@
               type="button"
               data-language="es"
               lang="es"
+              aria-label="Idioma actual: español"
               aria-pressed="true"
             >
-              ES
+              <svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true">
+                <rect width="30" height="20" fill="#AA151B" />
+                <path fill="#F1BF00" d="M0 5h30v10H0z" />
+              </svg>
             </button>
             <button
               class="header-control language-control"
               type="button"
               data-language="en"
               lang="en"
+              aria-label="Cambiar idioma a inglés"
               aria-pressed="false"
             >
-              EN
+              <svg class="language-flag" viewBox="0 0 30 20" aria-hidden="true">
+                <path fill="#012169" d="M0 0h30v20H0z" />
+                <path d="m0 0 30 20M30 0 0 20" stroke="#FFF" stroke-width="4" />
+                <path d="m0 0 30 20M30 0 0 20" stroke="#C8102E" stroke-width="1.5" />
+                <path d="M15 0v20M0 10h30" stroke="#FFF" stroke-width="6" />
+                <path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3" />
+              </svg>
             </button>
           </div>
           <button
             class="header-control"
             id="theme-toggle"
             type="button"
+            aria-label="Cambiar a tema oscuro"
             aria-pressed="false"
           >
-            Oscuro
+            <svg
+              class="theme-icon theme-icon-moon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M20.4 14.5A8.6 8.6 0 0 1 9.5 3.6a6.9 6.9 0 1 0 10.9 10.9Z"
+              />
+            </svg>
+            <svg
+              class="theme-icon theme-icon-sun"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"
+              />
+            </svg>
           </button>
           <span
             class="control-status"
@@ -92,7 +122,6 @@
         <section id="inicio">
           <div class="section-header-info">
             <span data-i18n="section.home">PORTAFOLIO / INICIO</span>
-            <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
           </div>
 
           <div class="hero-content-grid">
@@ -101,7 +130,7 @@
             </div>
 
             <div class="hero-right">
-              <h2>Full Stack Developer</h2>
+              <h2>Backend & Web Developer</h2>
               <p class="hero-summary" data-i18n="home.description">
                 Técnico en Desarrollo de Sistemas de Información con más de 3
                 años de experiencia en desarrollo de software, análisis de
@@ -114,14 +143,35 @@
             </div>
 
             <div class="hero-buttons">
-              <a href="#proyectos" data-i18n="home.projects">Ver proyectos ↗</a>
+              <a href="#proyectos">
+                <svg
+                  class="hero-button-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <rect x="3" y="4" width="8" height="7" rx="1" />
+                  <rect x="13" y="4" width="8" height="7" rx="1" />
+                  <rect x="3" y="13" width="8" height="7" rx="1" />
+                  <rect x="13" y="13" width="8" height="7" rx="1" />
+                </svg>
+                <span data-i18n="home.projects">Ver proyectos</span>
+              </a>
               <a
                 href="https://drive.google.com/file/d/1uLiZi33N5eKuXZy5fmXG3lh70kiTaUZI/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-                data-i18n="home.resume"
-                >Ver CV ↗</a
               >
+                <svg
+                  class="hero-button-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6"
+                  />
+                </svg>
+                <span data-i18n="home.resume">Ver CV</span>
+              </a>
             </div>
           </div>
         </section>
@@ -204,7 +254,7 @@
                     Mi camino de aprendizaje
                   </h2>
                   <p data-i18n="about.learningStart" data-i18n-html>
-                    A los 18 años decidí profundizar por mi cuenta en el mundo
+                    A los 17 años decidí profundizar por mi cuenta en el mundo
                     de la tecnología. Comencé con un libro de programación y,
                     gracias al acceso a <strong>Platzi</strong> que me brindó un
                     familiar cercano, descubrí nuevas áreas y recursos que
@@ -230,7 +280,6 @@
         <section id="experiencia">
           <div class="section-header-info">
             <span data-i18n="section.experience">PORTAFOLIO / EXPERIENCIA</span>
-            <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
           </div>
 
           <div class="experience-content">
@@ -261,61 +310,36 @@
 
                 <ul>
                   <li data-i18n="experience.vidatur.web">
-                    Análisis de requerimientos, modelamiento de datos y
-                    desarrollo de soluciones web utilizando PHP, JavaScript,
-                    HTML, CSS, Bootstrap, AJAX y SQL/MySQL, participando en la
-                    implementación de funcionalidades, lógica de negocio e
-                    integración frontend- backend.
+                    Análisis de requerimientos y desarrollo de soluciones web
+                    escalables utilizando PHP, JavaScript, Bootstrap, AJAX y
+                    SQL/MySQL. Aplicación de principios SOLID y gestión en
+                    entornos PaaS.
                   </li>
 
                   <li data-i18n="experience.vidatur.backoffice">
-                    Gestión y migración de bases de datos, análisis de
-                    relaciones, optimización de consultas SQL y ejecución de
-                    procesos de migración y depuración de datos masivos de
-                    manera ágil para asegurar la consistencia operativa.
+                    Gestión y optimización de bases de datos relacionales,
+                    ejecutando procesos de migración, depuración de datos
+                    masivos y asegurando la consistencia operativa.
                   </li>
 
                   <li data-i18n="experience.vidatur.cms">
-                    Diseño y desarrollo de un backoffice para la gestión de
-                    reservas de distintas líneas de servicio, incorporando
-                    módulos de liquidación, inventarios, acortador personalizado
-                    para difusión comercial, reportería y seguimiento operativo
-                    para centralizar la información y facilitar el control de
-                    las operaciones.
+                    Diseño de sistemas internos y CMS a medida, centralizando la
+                    gestión de reservas, liquidaciones, inventarios y la
+                    actualización automatizada de paquetes turísticos sin
+                    edición manual de código.
                   </li>
 
                   <li data-i18n="experience.vidatur.suppliers">
-                    Implementación de un CMS interno para la gestión y
-                    publicación de paquetes turísticos, automatizando la
-                    actualización de imágenes, precios y contenidos mediante
-                    formularios, eliminando la edición manual de código.
+                    Integración de APIs (Kashio - BCP y Amadeus Web Services) en
+                    PHP/MySQL, logrando la conciliación automática en tiempo
+                    real y la optimización de costos en infraestructura.
                   </li>
 
                   <li data-i18n="experience.vidatur.travel">
-                    Desarrollo de una herramienta web para centralizar y
-                    consultar información de proveedores desde una interfaz
-                    unificada, facilitando el acceso a la información de las
-                    áreas comerciales y operativas.
-                  </li>
-
-                  <li data-i18n="experience.vidatur.travel">
-                    Integración de recaudación (Kashio - BCP): Implementación de
-                    webhooks y APIs en PHP/MySQL para la conciliación automática
-                    de pagos y acreditación de saldo en tiempo real, incluyendo
-                    un acortador de enlaces personalizado.
-                  </li>
-                  <li data-i18n="experience.vidatur.travel">
-                    Integración de servicios turísticos (Amadeus Web Services):
-                    Gestión técnica de la conectividad CAU (Unidad de Acceso
-                    Corporativo). para la integración del módulo aéreo y manejo
-                    de aerolíneas, optimizando costos en infraestructura de
-                    software.
-                  </li>
-                  <li data-i18n="experience.vidatur.travel">
-                    Gestión operativa de Travel Compositor, administrando
-                    cotizaciones, reservas, inventarios, márgenes comerciales,
-                    procesos de postventa y generación de reportes para el
-                    seguimiento de las operaciones.
+                    Administración operativa de Travel Compositor y herramientas
+                    de proveedores, controlando cotizaciones, márgenes
+                    comerciales y facilitando el acceso a la información para
+                    las áreas operativas.
                   </li>
                 </ul>
               </div>
@@ -331,7 +355,7 @@
               <div class="experience-details">
                 <div class="experience-role">
                   <h4 data-i18n="experience.import.role">
-                    Sistemas y Soporte Tecnológico
+                    Sistemas y Soporte TI
                   </h4>
                   <span data-i18n="experience.import.dates"
                     >Sep 2024 — Nov 2025</span
@@ -348,8 +372,8 @@
 
                   <li data-i18n="experience.import.infrastructure">
                     Administración y mantenimiento de servidores y redes,
-                    recuperación básica de datos y resolución de incidencias
-                    mediante diagnósticos técnicos.
+                    asegurando la recuperación básica de datos y la resolución
+                    ágil de incidencias mediante diagnósticos técnicos.
                   </li>
 
                   <li data-i18n="experience.import.support">
@@ -359,9 +383,9 @@
                   </li>
 
                   <li data-i18n="experience.import.testing">
-                    Realización de pruebas funcionales y técnicas, aplicación de
-                    criterios de seguridad informática y capacitación a usuarios
-                    para el correcto uso de los sistemas implementados.
+                    Realización de pruebas funcionales y técnicas, aplicando
+                    criterios de seguridad informática y capacitando a los
+                    usuarios para el correcto uso de los sistemas implementados.
                   </li>
                 </ul>
               </div>
@@ -389,26 +413,26 @@
                 <ul>
                   <li data-i18n="experience.depol.tools">
                     Desarrollo y mantenimiento de herramientas web internas para
-                    digitalizar procesos de inventarios, pedidos y control del
-                    flujo de productos.
+                    digitalizar de manera eficiente los procesos de inventarios,
+                    pedidos y el control del flujo de productos.
                   </li>
 
                   <li data-i18n="experience.depol.databases">
                     Gestión y actualización de bases de datos de clientes,
-                    productos y ventas, asegurando la integridad y
-                    disponibilidad de la información.
+                    productos y ventas, asegurando permanentemente la integridad
+                    y disponibilidad de la información.
                   </li>
 
                   <li data-i18n="experience.depol.automation">
-                    Automatización de registros mediante formularios web y hojas
-                    de cálculo, reduciendo la carga manual en producción y
-                    control de stock.
+                    Automatización de registros mediante formularios web y
+                    herramientas de datos, logrando una reducción significativa
+                    de la carga manual en producción y control de stock.
                   </li>
 
                   <li data-i18n="experience.depol.reports">
-                    Elaboración de reportes operativos para el seguimiento de
-                    pedidos, mejorando la trazabilidad de inventarios y el
-                    control del flujo de productos.
+                    Elaboración de reportes operativos estratégicos para el
+                    seguimiento de pedidos, mejorando de forma notable la
+                    trazabilidad de inventarios y el control de las operaciones.
                   </li>
                 </ul>
               </div>
@@ -416,20 +440,19 @@
           </div>
         </section>
 
-        <!-- TECNOLOGÍAS -->
-        <section id="tecnologias">
+        <!-- CONOCIMIENTOS -->
+        <section id="conocimientos">
           <div class="section-header-info">
             <span data-i18n="section.technologies"
-              >PORTAFOLIO / TECNOLOGÍAS</span
+              >PORTAFOLIO / CONOCIMIENTOS</span
             >
-            <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
           </div>
 
           <div class="technologies-content">
             <div class="technologies-heading">
-              <h2 data-i18n="technologies.title">TECNOLOGÍAS</h2>
+              <h2 data-i18n="technologies.title">CONOCIMIENTOS</h2>
               <p data-i18n="technologies.summary">
-                Herramientas y tecnologías que utilizo para desarrollar
+                Conocimientos y herramientas que aplico para desarrollar
                 soluciones, gestionar información y construir aplicaciones.
               </p>
             </div>
@@ -607,7 +630,6 @@
         <section id="proyectos">
           <div class="section-header-info">
             <span data-i18n="section.projects">PORTAFOLIO / PROYECTOS</span>
-            <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
           </div>
 
           <!-- Aquí irán tus proyectos -->
@@ -617,7 +639,6 @@
         <section id="contacto">
           <div class="section-header-info">
             <span data-i18n="section.contact">PORTAFOLIO / CONTACTO</span>
-            <span data-i18n="profile.location">Lima, Perú · UTC-5</span>
           </div>
 
           <div class="contact-content">
@@ -696,8 +717,34 @@
 
     <!-- FOOTER -->
     <footer>
-      <div class="container">
-        <p>&copy; 2026 - Adrian Cardenas Lamas</p>
+      <div class="container footer-content">
+        <div class="footer-social-links">
+          <a
+            href="https://www.linkedin.com/in/adriancarl31/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://github.com/adrivng"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.75.08-.74.08-.74 1.2.08 1.83 1.23 1.83 1.23 1.07 1.84 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.3c0 .32.22.69.83.57A12 12 0 0 0 12 .5Z"
+              />
+            </svg>
+          </a>
+        </div>
+        <p class="footer-copyright">&copy; 2026 - Adrian Cardenas Lamas</p>
       </div>
     </footer>
 
