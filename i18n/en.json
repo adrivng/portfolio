@@ -12,7 +12,7 @@
     { "clave": "nav.home", "es": "Inicio", "en": "Home" },
     { "clave": "nav.about", "es": "Sobre mí", "en": "About me" },
     { "clave": "nav.experience", "es": "Experiencia", "en": "Experience" },
-    { "clave": "nav.technologies", "es": "Conocimientos", "en": "Knowledge" },
+    { "clave": "nav.knowledge", "es": "Conocimientos", "en": "Knowledge" },
     { "clave": "nav.projects", "es": "Proyectos", "en": "Projects" },
     { "clave": "nav.contact", "es": "Contacto", "en": "Contact" },
     {
@@ -31,7 +31,7 @@
       "en": "PORTFOLIO / EXPERIENCE"
     },
     {
-      "clave": "section.technologies",
+      "clave": "section.knowledge",
       "es": "PORTAFOLIO / CONOCIMIENTOS",
       "en": "PORTFOLIO / KNOWLEDGE"
     },
@@ -72,8 +72,8 @@
     },
     {
       "clave": "home.projects",
-      "es": "Ver proyectos",
-      "en": "View projects"
+      "es": "Ver Repositorio",
+      "en": "View Repository"
     },
     { "clave": "home.resume", "es": "Ver CV", "en": "View resume" },
     {
@@ -242,31 +242,31 @@
       "en": "Prepared operational reports and tracked orders, improving inventory traceability."
     },
     {
-      "clave": "technologies.title",
+      "clave": "knowledge.title",
       "es": "CONOCIMIENTOS",
       "en": "KNOWLEDGE"
     },
     {
-      "clave": "technologies.summary",
+      "clave": "knowledge.summary",
       "es": "Conocimientos y herramientas que aplico para desarrollar soluciones, gestionar información y construir aplicaciones.",
       "en": "Knowledge and tools I use to develop solutions, manage information, and build applications."
     },
     {
-      "clave": "technologies.databases",
+      "clave": "knowledge.databases",
       "es": "Bases de datos",
       "en": "Databases"
     },
     {
-      "clave": "technologies.tools",
+      "clave": "knowledge.tools",
       "es": "Herramientas y control de versiones",
       "en": "Tools and version control"
     },
     {
-      "clave": "technologies.apis",
+      "clave": "knowledge.apis",
       "es": "APIs y testing",
       "en": "APIs and testing"
     },
-    { "clave": "technologies.other", "es": "Otros", "en": "Other" },
+    { "clave": "knowledge.other", "es": "Otros", "en": "Other" },
     { "clave": "contact.title", "es": "Hablemos", "en": "Let's talk" },
     {
       "clave": "contact.summary",
