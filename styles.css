@@ -108,11 +108,17 @@ header {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-accent);
+    text-decoration: none;
+}
+
+.logo-container:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
 }
 
 .logo-typing {
     display: inline-block;
-    width: calc(9ch + 2px);
+    width: calc(12ch + 2px);
     margin-left: 0.3em;
     overflow: hidden;
     font-family: monospace;
@@ -125,12 +131,12 @@ header {
     overflow: hidden;
     border-right: 2px solid currentColor;
     font-family: monospace;
-    animation: type-portfolio 1.2s steps(9, end) forwards, blink-cursor 0.8s step-end infinite;
+    animation: type-portfolio 1.4s steps(12, end) forwards, blink-cursor 0.8s step-end infinite;
 }
 
 @keyframes type-portfolio {
     to {
-        width: calc(9ch + 2px);
+        width: calc(12ch + 2px);
     }
 }
 
@@ -206,15 +212,15 @@ header {
     stroke-linejoin: round;
 }
 
-.theme-icon-sun {
-    display: none;
-}
-
-.dark-mode .theme-icon-moon {
+.theme-icon-moon {
     display: none;
 }
 
 .dark-mode .theme-icon-sun {
+    display: none;
+}
+
+.dark-mode .theme-icon-moon {
     display: block;
 }
 
@@ -1069,7 +1075,7 @@ main>section {
     }
 
     .logo-typing-text {
-        width: calc(9ch + 2px);
+        width: calc(12ch + 2px);
         border: 0;
     }
 }
