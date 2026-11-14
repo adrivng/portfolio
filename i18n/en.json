@@ -16,6 +16,11 @@
     { "clave": "nav.projects", "es": "Proyectos", "en": "Projects" },
     { "clave": "nav.contact", "es": "Contacto", "en": "Contact" },
     {
+      "clave": "section.portfolio",
+      "es": "{Portafolio;}",
+      "en": "{Portfolio;}"
+    },
+    {
       "clave": "section.home",
       "es": "PORTAFOLIO / INICIO",
       "en": "PORTFOLIO / HOME"

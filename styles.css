@@ -118,7 +118,7 @@ header {
 
 .logo-typing {
     display: inline-block;
-    width: calc(12ch + 2px);
+    width: calc(13ch + 2px);
     margin-left: 0.3em;
     overflow: hidden;
     font-family: monospace;
@@ -136,7 +136,7 @@ header {
 
 @keyframes type-portfolio {
     to {
-        width: calc(12ch + 2px);
+        width: calc(13ch + 2px);
     }
 }
 
@@ -1075,7 +1075,7 @@ main>section {
     }
 
     .logo-typing-text {
-        width: calc(12ch + 2px);
+        width: max-content;
         border: 0;
     }
 }
