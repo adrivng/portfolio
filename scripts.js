@@ -396,16 +396,20 @@ async function copyTextToClipboard(text) {
   return copied;
 }
 
+
+
 function initContactActions() {
   const contactForm = document.querySelector("#contact-form");
   const copyBtn = document.querySelector("#copy-email-btn");
   const copyFeedback = document.querySelector("#copy-email-feedback");
+  const statusEl = document.querySelector("#contact-status");
 
   if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
+    contactForm.addEventListener("submit", async (event) => {
       event.preventDefault();
 
       const recipient = getContactEmail();
+      const submitBtn = contactForm.querySelector(".contact-submit");
       const formData = new FormData(contactForm);
       const firstName = String(formData.get("nombres") || "").trim();
       const lastName = String(formData.get("apellidos") || "").trim();
@@ -414,22 +418,52 @@ function initContactActions() {
       const message = String(formData.get("mensaje") || "").trim();
       const isEnglish = document.documentElement.lang === "en";
 
-      const subject = `${
-        isEnglish ? "Portfolio contact" : "Contacto desde el portafolio"
-      }: ${fullName}`;
+      if (statusEl) {
+        statusEl.className = "contact-status";
+        statusEl.textContent = isEnglish ? "Sending message..." : "Enviando mensaje...";
+      }
+      if (submitBtn) submitBtn.disabled = true;
 
-      const body = [
-        `${isEnglish ? "Name" : "Nombre"}: ${fullName}`,
-        `${isEnglish ? "Email" : "Correo"}: ${senderEmail}`,
-        "",
-        message,
-      ].join("\n");
+      try {
+        const response = await fetch(`https://formsubmit.co/ajax/${recipient}`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify({
+            name: fullName,
+            email: senderEmail,
+            message: message,
+            _subject: `${isEnglish ? "Portfolio contact" : "Contacto desde el portafolio"}: ${fullName}`,
+            _template: "table",
+          }),
+        });
 
-      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(
-        subject,
-      )}&body=${encodeURIComponent(body)}`;
+        const result = await response.json();
 
-      window.location.href = mailtoUrl;
+        if (response.ok && (result.success === "true" || result.success === true)) {
+          if (statusEl) {
+            statusEl.className = "contact-status is-success";
+            statusEl.textContent = isEnglish
+              ? "✓ Message sent successfully. I will get back to you soon."
+              : "✓ Mensaje enviado correctamente. Te responderé pronto.";
+          }
+          contactForm.reset();
+        } else {
+          throw new Error(result.message || "Error al enviar");
+        }
+      } catch (error) {
+        console.error("Error enviando formulario:", error);
+        if (statusEl) {
+          statusEl.className = "contact-status is-error";
+          statusEl.textContent = isEnglish
+            ? "Could not send the message. Please use the Copy email button."
+            : "No se pudo enviar el mensaje. Usa el botón Copiar correo.";
+        }
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
     });
   }
 
