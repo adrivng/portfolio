@@ -6,8 +6,8 @@
     { "clave": "languageSelector", "es": "Idioma", "en": "Language" },
     {
       "clave": "page.title",
-      "es": "Adrian Cardenas Lamas | Full Stack Developer",
-      "en": "Adrian Cardenas Lamas | Full Stack Developer"
+      "es": "Adrian Cardenas Lamas | Backend & Web Developer",
+      "en": "Adrian Cardenas Lamas | Backend & Web Developer"
     },
     { "clave": "nav.home", "es": "Inicio", "en": "Home" },
     { "clave": "nav.about", "es": "Sobre mí", "en": "About me" },
@@ -77,30 +77,10 @@
     },
     {
       "clave": "home.projects",
-      "es": "Ver Repositorio",
-      "en": "View Repository"
+      "es": "Mis proyectos",
+      "en": "My projects"
     },
     { "clave": "home.resume", "es": "Ver CV", "en": "View resume" },
-    {
-      "clave": "about.tabs.title",
-      "es": "Conoce más sobre mí",
-      "en": "More about me"
-    },
-    {
-      "clave": "about.tabs.profile",
-      "es": "Perfil",
-      "en": "Profile"
-    },
-    {
-      "clave": "about.tabs.story",
-      "es": "Historia",
-      "en": "Story"
-    },
-    {
-      "clave": "about.tabs.learning",
-      "es": "Formación",
-      "en": "Education"
-    },
     {
       "clave": "about.introTitle",
       "es": "Un poco sobre mí",
@@ -110,6 +90,11 @@
       "clave": "about.intro",
       "es": "Soy <strong>Desarrollador de Sistemas de Información</strong>, con experiencia en el análisis, desarrollo e implementación de soluciones tecnológicas para empresas. Me interesa conectar la tecnología con las necesidades del negocio, optimizando procesos y facilitando la gestión de la información.",
       "en": "I am an <strong>Information Systems Developer</strong>, with experience analyzing, developing, and implementing technology solutions for businesses. I am interested in connecting technology with business needs, optimizing processes, and making information management easier."
+    },
+    {
+      "clave": "about.profile",
+      "es": "Con <span data-age></span> años, me considero una persona autodidacta, adaptable y comprometida. Disfruto enfrentar nuevos retos, explorar diferentes herramientas y salir de mi zona de confort para adquirir nuevos conocimientos.",
+      "en": "At <span data-age></span>, I consider myself self-taught, adaptable, and committed. I enjoy taking on new challenges, exploring different tools, and stepping outside my comfort zone to gain new knowledge."
     },
     {
       "clave": "about.storyTitle",
@@ -122,24 +107,19 @@
       "en": "My interest in technology began with curiosity about how things work and how they can become useful solutions. Over time, that curiosity grew into a desire to learn, experiment, and build my own solutions."
     },
     {
-      "clave": "about.profile",
-      "es": "Con <span data-age></span> años, me considero una persona autodidacta, adaptable y comprometida. Disfruto enfrentar nuevos retos, explorar diferentes herramientas y salir de mi zona de confort para adquirir nuevos conocimientos.",
-      "en": "At <span data-age></span>, I consider myself self-taught, adaptable, and committed. I enjoy taking on new challenges, exploring different tools, and stepping outside my comfort zone to gain new knowledge."
-    },
-    {
       "clave": "about.learningTitle",
       "es": "Mi camino de aprendizaje",
       "en": "My learning journey"
     },
     {
       "clave": "about.learningStart",
-      "es": "A los 18 años decidí profundizar por mi cuenta en el mundo de la tecnología. Comencé con un libro de programación y, gracias al acceso a <strong>Platzi</strong> que me brindó un familiar cercano, descubrí nuevas áreas y recursos que despertaron aún más mi interés por seguir aprendiendo.",
-      "en": "At 18, I decided to explore technology on my own. I started with a programming book and, thanks to access to <strong>Platzi</strong> provided by a close relative, discovered new fields and resources that made me even more eager to keep learning."
+      "es": "A los 17 años decidí profundizar por mi cuenta en el mundo de la tecnología. Comencé con un libro de programación y, gracias al acceso a <strong>Platzi</strong> que me brindó un familiar cercano, descubrí nuevas áreas y recursos que despertaron aún más mi interés por seguir aprendiendo.",
+      "en": "At 17, I decided to explore technology on my own. I started with a programming book and, thanks to access to <strong>Platzi</strong> provided by a close relative, discovered new fields and resources that made me even more eager to keep learning."
     },
     {
       "clave": "about.education",
-      "es": "A los 19 años inicié mi formación profesional en <strong>IDAT</strong>, donde, mediante docentes exigentes y una formación orientada a la práctica, fortalecí mis conocimientos en desarrollo de sistemas, bases de datos, análisis y gestión de proyectos. Esta etapa me permitió dar el salto al entorno laboral y prepararme para afrontar proyectos y desafíos de mayor complejidad.",
-      "en": "At 19, I began my professional studies at <strong>IDAT</strong>. With demanding instructors and hands-on training, I strengthened my knowledge of systems development, databases, analysis, and project management. This experience helped me enter the workforce and prepare for more complex projects and challenges."
+      "es": "A los 19 años inicié mi formación profesional en <strong>INSTITUTO SUPERIOR TECNOLÓGICO IDAT</strong>, donde, mediante docentes exigentes y una formación orientada a la práctica, fortalecí mis conocimientos en desarrollo de sistemas, bases de datos, análisis y gestión de proyectos. Esta etapa me permitió dar el salto al entorno laboral y prepararme para afrontar proyectos y desafíos de mayor complejidad.",
+      "en": "At 19, I began my professional studies at <strong>INSTITUTO SUPERIOR TECNOLÓGICO IDAT</strong>. With demanding instructors and hands-on training, I strengthened my knowledge of systems development, databases, analysis, and project management. This experience helped me enter the workforce and prepare for more complex projects and challenges."
     },
     {
       "clave": "experience.title",
@@ -158,38 +138,38 @@
     },
     {
       "clave": "experience.vidatur.dates",
-      "es": "Ene 2026 — Oct 2026",
-      "en": "Jan 2026 — Oct 2026"
+      "es": "Ene 2026 — Actualidad",
+      "en": "Jan 2026 — Present"
     },
     {
       "clave": "experience.vidatur.web",
-      "es": "Desarrollo e implementación de soluciones web de extremo a extremo con PHP, JavaScript, HTML/CSS, Bootstrap, AJAX y SQL/MySQL, desde el análisis de requerimientos hasta la integración frontend-backend y mantenimiento.",
-      "en": "Developed and implemented end-to-end web solutions with PHP, JavaScript, HTML/CSS, Bootstrap, AJAX, and SQL/MySQL, from requirements analysis through frontend-backend integration and maintenance."
+      "es": "Análisis de requerimientos y desarrollo de soluciones web escalables utilizando PHP, JavaScript, Bootstrap, AJAX y SQL/MySQL. Aplicación de principios SOLID y gestión en entornos PaaS.",
+      "en": "Requirements analysis and development of scalable web solutions using PHP, JavaScript, Bootstrap, AJAX, and SQL/MySQL. Applied SOLID principles and managed PaaS environments."
     },
     {
       "clave": "experience.vidatur.backoffice",
-      "es": "Diseño y desarrollo de un backoffice para la gestión de reservas, incorporando módulos de liquidación, inventarios, reportería y seguimiento operativo.",
-      "en": "Designed and developed a back-office system for reservation management, including settlement, inventory, reporting, and operational tracking modules."
+      "es": "Gestión y optimización de bases de datos relacionales, ejecutando procesos de migración, depuración de datos masivos y asegurando la consistencia operativa.",
+      "en": "Managed and optimized relational databases, executing migration processes, bulk data cleanup, and ensuring operational consistency."
     },
     {
       "clave": "experience.vidatur.cms",
-      "es": "Implementación de un CMS interno para gestionar y publicar paquetes turísticos mediante formularios, automatizando la carga de imágenes, precios y contenido.",
-      "en": "Implemented an internal CMS to manage and publish travel packages through forms, automating image, pricing, and content uploads."
+      "es": "Diseño de sistemas internos y CMS a medida, centralizando la gestión de reservas, liquidaciones, inventarios y la actualización automatizada de paquetes turísticos sin edición manual de código.",
+      "en": "Designed custom internal systems and CMS platforms, centralizing reservations, settlements, inventory, and automated travel package updates without manual code editing."
     },
     {
       "clave": "experience.vidatur.suppliers",
-      "es": "Desarrollo de una herramienta web para centralizar información de proveedores, facilitando las consultas de los equipos comercial y operativo.",
-      "en": "Developed a web tool to centralize supplier information and make it easier for sales and operations teams to find what they need."
+      "es": "Integración de APIs (Kashio - BCP y Amadeus Web Services) en PHP/MySQL, logrando la conciliación automática en tiempo real y la optimización de costos en infraestructura.",
+      "en": "Integrated APIs (Kashio - BCP and Amadeus Web Services) in PHP/MySQL, achieving real-time automatic reconciliation and infrastructure cost optimization."
     },
     {
       "clave": "experience.vidatur.travel",
-      "es": "Gestión operativa de Travel Compositor, administrando procesos comerciales B2B, cotizaciones, reservas, inventarios, márgenes, markup, postventa y reportería.",
-      "en": "Managed day-to-day operations in Travel Compositor, including B2B sales processes, quotes, reservations, inventory, margins, markup, after-sales support, and reporting."
+      "es": "Administración operativa de Travel Compositor y herramientas de proveedores, controlando cotizaciones, márgenes comerciales y facilitando el acceso a la información para las áreas operativas.",
+      "en": "Operated Travel Compositor and supplier tools, controlling quotes and commercial margins while making information easily accessible to operational teams."
     },
     {
       "clave": "experience.import.role",
-      "es": "Sistemas y Soporte Tecnológico",
-      "en": "Systems and Technology Support"
+      "es": "Sistemas y Soporte TI",
+      "en": "Systems and IT Support"
     },
     {
       "clave": "experience.import.dates",
@@ -198,23 +178,23 @@
     },
     {
       "clave": "experience.import.solutions",
-      "es": "Análisis, desarrollo e implementación de soluciones tecnológicas para atender las necesidades del área comercial y mejorar los sistemas internos.",
-      "en": "Analyzed, developed, and implemented technology solutions to meet sales team needs and improve internal systems."
+      "es": "Análisis e implementación de soluciones tecnológicas para atender requerimientos del área comercial, participando en el mantenimiento y mejora de aplicaciones y sistemas internos.",
+      "en": "Analyzed and implemented technology solutions to meet commercial team requirements, participating in the maintenance and improvement of internal applications and systems."
     },
     {
       "clave": "experience.import.infrastructure",
-      "es": "Administración y mantenimiento de servidores y redes, recuperación básica de datos y gestión de incidencias.",
-      "en": "Managed and maintained servers and networks, performed basic data recovery, and handled incidents."
+      "es": "Administración y mantenimiento de servidores y redes, asegurando la recuperación básica de datos y la resolución ágil de incidencias mediante diagnósticos técnicos.",
+      "en": "Administered and maintained servers and networks, ensuring basic data recovery and fast incident resolution through technical diagnostics."
     },
     {
       "clave": "experience.import.support",
-      "es": "Mantenimiento preventivo y correctivo de equipos y soporte presencial y remoto a usuarios en hardware, software, aplicaciones y conectividad.",
-      "en": "Performed preventive and corrective equipment maintenance and provided in-person and remote support for hardware, software, applications, and connectivity."
+      "es": "Ejecución de mantenimiento preventivo y correctivo de equipos de cómputo, brindando soporte presencial y remoto en hardware, software, aplicaciones y conectividad.",
+      "en": "Performed preventive and corrective computer maintenance, providing on-site and remote support for hardware, software, applications, and connectivity."
     },
     {
       "clave": "experience.import.testing",
-      "es": "Ejecución de pruebas funcionales y técnicas, aplicación de criterios de seguridad informática y capacitación a usuarios.",
-      "en": "Performed functional and technical testing, applied information security practices, and trained users."
+      "es": "Realización de pruebas funcionales y técnicas, aplicando criterios de seguridad informática y capacitando a los usuarios para el correcto uso de los sistemas implementados.",
+      "en": "Executed functional and technical testing, applied information security criteria, and trained users on implemented systems."
     },
     {
       "clave": "experience.depol.role",
@@ -228,23 +208,23 @@
     },
     {
       "clave": "experience.depol.tools",
-      "es": "Desarrollo y mantenimiento de herramientas web internas para digitalizar procesos de inventarios, pedidos y flujo de productos.",
-      "en": "Developed and maintained internal web tools to digitize inventory, order, and product-flow processes."
+      "es": "Desarrollo y mantenimiento de herramientas web internas para digitalizar de manera eficiente los procesos de inventarios, pedidos y el control del flujo de productos.",
+      "en": "Developed and maintained internal web tools to efficiently digitize inventory, order, and product-flow processes."
     },
     {
       "clave": "experience.depol.databases",
-      "es": "Gestión y actualización de bases de datos de clientes, productos y ventas, asegurando la integridad y disponibilidad de la información.",
+      "es": "Gestión y actualización de bases de datos de clientes, productos y ventas, asegurando permanentemente la integridad y disponibilidad de la información.",
       "en": "Managed and updated customer, product, and sales databases, ensuring information integrity and availability."
     },
     {
       "clave": "experience.depol.automation",
-      "es": "Automatización de registros mediante formularios web y hojas de cálculo, optimizando el control de producción y stock.",
-      "en": "Automated records with web forms and spreadsheets, improving production and stock tracking."
+      "es": "Automatización de registros mediante formularios web y herramientas de datos, logrando una reducción significativa de la carga manual en producción y control de stock.",
+      "en": "Automated records through web forms and data tools, significantly reducing manual workload in production and stock control."
     },
     {
       "clave": "experience.depol.reports",
-      "es": "Elaboración de reportes operativos y seguimiento de pedidos, mejorando la trazabilidad del inventario.",
-      "en": "Prepared operational reports and tracked orders, improving inventory traceability."
+      "es": "Elaboración de reportes operativos estratégicos para el seguimiento de pedidos, mejorando de forma notable la trazabilidad de inventarios y el control de las operaciones.",
+      "en": "Prepared strategic operational reports to track orders, notably improving inventory traceability and operational control."
     },
     {
       "clave": "knowledge.title",

@@ -189,3 +189,285 @@ themeButton.addEventListener('click', () => {
     updateTheme(isDark);
     savePreference('theme', isDark ? 'dark' : 'light');
 });
+function initProjects() {
+  const filterButtons = document.querySelectorAll(".project-filter");
+  const projects = document.querySelectorAll(".project-showcase");
+
+  const lightbox = document.querySelector("#project-lightbox");
+  const lightboxImg = lightbox?.querySelector(".project-lightbox-img");
+  const lightboxPrev = lightbox?.querySelector(".lightbox-prev");
+  const lightboxNext = lightbox?.querySelector(".lightbox-next");
+  const lightboxCounter = lightbox?.querySelector(".project-lightbox-counter");
+  const lightboxCloseEls = lightbox?.querySelectorAll("[data-lightbox-close]") || [];
+
+  let activeGallery = null;
+
+  function renderLightbox() {
+    if (!activeGallery || !lightboxImg) return;
+    const { images, index, alt } = activeGallery.getState();
+    lightboxImg.src = images[index];
+    lightboxImg.alt = alt;
+    if (lightboxCounter) {
+      lightboxCounter.textContent = `${index + 1} / ${images.length}`;
+    }
+  }
+
+  function openLightbox(galleryState) {
+    if (!lightbox) return;
+    activeGallery = galleryState;
+    activeGallery.stopAutoplay();
+    renderLightbox();
+    lightbox.classList.add("is-open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    if (!lightbox || !lightbox.classList.contains("is-open")) return;
+    lightbox.classList.remove("is-open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    if (activeGallery) {
+      activeGallery.startAutoplay();
+      activeGallery = null;
+    }
+  }
+
+  lightboxCloseEls.forEach((el) => {
+    el.addEventListener("click", closeLightbox);
+  });
+
+  lightboxPrev?.addEventListener("click", () => {
+    if (!activeGallery) return;
+    activeGallery.setIndex(activeGallery.getState().index - 1);
+    renderLightbox();
+  });
+
+  lightboxNext?.addEventListener("click", () => {
+    if (!activeGallery) return;
+    activeGallery.setIndex(activeGallery.getState().index + 1);
+    renderLightbox();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (!lightbox?.classList.contains("is-open") || !activeGallery) return;
+    if (event.key === "Escape") closeLightbox();
+    if (event.key === "ArrowLeft") {
+      activeGallery.setIndex(activeGallery.getState().index - 1);
+      renderLightbox();
+    }
+    if (event.key === "ArrowRight") {
+      activeGallery.setIndex(activeGallery.getState().index + 1);
+      renderLightbox();
+    }
+  });
+
+  filterButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.dataset.filter;
+      filterButtons.forEach((b) => b.classList.remove("is-active"));
+      btn.classList.add("is-active");
+
+      projects.forEach((card) => {
+        const matches = filter === "all" || card.dataset.category === filter;
+        card.classList.toggle("is-hidden", !matches);
+      });
+    });
+  });
+
+  projects.forEach((card) => {
+    let images = [];
+    try {
+      images = JSON.parse(card.dataset.images || "[]");
+    } catch (error) {
+      console.warn("Formato inválido en data-images:", error);
+      return;
+    }
+
+    const carousel = card.querySelector(".project-carousel");
+    const imgEl = card.querySelector(".project-carousel-img");
+    const prevBtn = card.querySelector(".carousel-prev");
+    const nextBtn = card.querySelector(".carousel-next");
+    if (!imgEl || !images.length) return;
+
+    let index = 0;
+    let autoplayTimer = null;
+
+    const updateImage = (nextIndex) => {
+      index = (nextIndex + images.length) % images.length;
+      imgEl.src = images[index];
+      if (activeGallery?.card === card) {
+        renderLightbox();
+      }
+    };
+
+    const startAutoplay = () => {
+      if (images.length <= 1) return;
+      stopAutoplay();
+      autoplayTimer = window.setInterval(() => {
+        updateImage(index + 1);
+      }, 4000);
+    };
+
+    const stopAutoplay = () => {
+      if (autoplayTimer) {
+        window.clearInterval(autoplayTimer);
+        autoplayTimer = null;
+      }
+    };
+
+    if (images.length > 1) {
+      prevBtn?.addEventListener("click", () => {
+        updateImage(index - 1);
+        startAutoplay();
+      });
+
+      nextBtn?.addEventListener("click", () => {
+        updateImage(index + 1);
+        startAutoplay();
+      });
+
+      carousel?.addEventListener("mouseenter", () => {
+        if (!lightbox?.classList.contains("is-open")) {
+          stopAutoplay();
+        }
+      });
+
+      carousel?.addEventListener("mouseleave", () => {
+        if (!lightbox?.classList.contains("is-open")) {
+          startAutoplay();
+        }
+      });
+
+      startAutoplay();
+    }
+
+    imgEl.addEventListener("click", () => {
+      openLightbox({
+        card,
+        startAutoplay,
+        stopAutoplay,
+        setIndex: updateImage,
+        getState: () => ({
+          images,
+          index,
+          alt: imgEl.alt || "Captura ampliada del proyecto",
+        }),
+      });
+    });
+  });
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initProjects);
+} else {
+  initProjects();
+}
+function getContactEmail() {
+  const userPart = [
+    103, 105, 97, 110, 99, 97, 114, 100, 101, 110, 97, 115, 49, 56,
+  ]
+    .map((code) => String.fromCharCode(code))
+    .join("");
+  const domainPart = ["gmail", "com"].join(".");
+  return `${userPart}@${domainPart}`;
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard && window.isSecureContext) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const tempTextarea = document.createElement("textarea");
+  tempTextarea.value = text;
+  tempTextarea.setAttribute("readonly", "");
+  tempTextarea.style.position = "fixed";
+  tempTextarea.style.opacity = "0";
+  document.body.appendChild(tempTextarea);
+  tempTextarea.select();
+
+  let copied = false;
+  try {
+    copied = document.execCommand("copy");
+  } finally {
+    document.body.removeChild(tempTextarea);
+  }
+  return copied;
+}
+
+function initContactActions() {
+  const contactForm = document.querySelector("#contact-form");
+  const copyBtn = document.querySelector("#copy-email-btn");
+  const copyFeedback = document.querySelector("#copy-email-feedback");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const recipient = getContactEmail();
+      const formData = new FormData(contactForm);
+      const firstName = String(formData.get("nombres") || "").trim();
+      const lastName = String(formData.get("apellidos") || "").trim();
+      const fullName = `${firstName} ${lastName}`.trim();
+      const senderEmail = String(formData.get("correo") || "").trim();
+      const message = String(formData.get("mensaje") || "").trim();
+      const isEnglish = document.documentElement.lang === "en";
+
+      const subject = `${
+        isEnglish ? "Portfolio contact" : "Contacto desde el portafolio"
+      }: ${fullName}`;
+
+      const body = [
+        `${isEnglish ? "Name" : "Nombre"}: ${fullName}`,
+        `${isEnglish ? "Email" : "Correo"}: ${senderEmail}`,
+        "",
+        message,
+      ].join("\n");
+
+      const mailtoUrl = `mailto:${recipient}?subject=${encodeURIComponent(
+        subject,
+      )}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoUrl;
+    });
+  }
+
+  if (copyBtn) {
+    let feedbackTimeout = null;
+
+    copyBtn.addEventListener("click", async () => {
+      const email = getContactEmail();
+      const isEnglish = document.documentElement.lang === "en";
+
+      try {
+        const ok = await copyTextToClipboard(email);
+        if (copyFeedback) {
+          copyFeedback.textContent = ok
+            ? isEnglish
+              ? "✓ Copied"
+              : "✓ Copiado"
+            : isEnglish
+              ? "Copy failed"
+              : "Error al copiar";
+        }
+      } catch (error) {
+        console.warn("No se pudo copiar el correo:", error);
+        if (copyFeedback) {
+          copyFeedback.textContent = isEnglish ? "Copy failed" : "Error al copiar";
+        }
+      }
+
+      if (feedbackTimeout) window.clearTimeout(feedbackTimeout);
+      feedbackTimeout = window.setTimeout(() => {
+        if (copyFeedback) copyFeedback.textContent = "";
+      }, 2500);
+    });
+  }
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initContactActions);
+} else {
+  initContactActions();
+}

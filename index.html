@@ -57,7 +57,9 @@
           data-i18n-aria-label="nav.home"
         >
           <span class="logo-typing" aria-hidden="true"
-            ><span class="logo-typing-text" data-i18n="section.portfolio">{Portafolio;}</span></span
+            ><span class="logo-typing-text" data-i18n="section.portfolio"
+              >{Portafolio;}</span
+            ></span
           >
         </a>
 
@@ -65,9 +67,7 @@
           <a href="#inicio" data-i18n="nav.home">Inicio</a>
           <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
           <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
-          <a href="#conocimientos" data-i18n="nav.knowledge"
-            >Conocimientos</a
-          >
+          <a href="#conocimientos" data-i18n="nav.knowledge">Conocimientos</a>
           <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
           <a href="#contacto" data-i18n="nav.contact">Contacto</a>
         </nav>
@@ -171,7 +171,7 @@
 
           <div class="hero-content-grid">
             <div class="hero-left">
-              <h1>Adrian Cardenas Lamas</h1>
+              <h1>Adrian Cárdenas Lamas</h1>
             </div>
 
             <div class="hero-right">
@@ -188,7 +188,8 @@
             </div>
 
             <div class="hero-buttons">
-              <a href="https://github.com/adrivng">
+              <a href="#proyectos">
+                <span data-i18n="home.projects">Mis proyectos</span>
                 <svg
                   class="hero-button-icon"
                   viewBox="0 0 24 24"
@@ -199,14 +200,13 @@
                   <rect x="3" y="13" width="8" height="7" rx="1" />
                   <rect x="13" y="13" width="8" height="7" rx="1" />
                 </svg>
-                <!-- <span data-i18n="home.projects">Ver proyectos</span>-->
-                 <span data-i18n="home.projects">Ver Repositorio</span>
               </a>
               <a
                 href="https://drive.google.com/file/d/1uLiZi33N5eKuXZy5fmXG3lh70kiTaUZI/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <span data-i18n="home.resume">Ver CV</span>
                 <svg
                   class="hero-button-icon"
                   viewBox="0 0 24 24"
@@ -214,7 +214,6 @@
                 >
                   <path d="M6 2h8l4 4v16H6zM14 2v5h5M9 12h6M9 16h6" />
                 </svg>
-                <span data-i18n="home.resume">Ver CV</span>
               </a>
             </div>
           </div>
@@ -228,95 +227,78 @@
           </div>
 
           <div class="about-content">
-            <fieldset class="about-tabs">
-              <legend data-i18n="about.tabs.title">Conoce más sobre mí</legend>
-              <input id="about-profile" type="radio" name="about-tab" checked />
-              <input id="about-story" type="radio" name="about-tab" />
-              <input id="about-learning" type="radio" name="about-tab" />
+            <!-- Bloque superior centrado (Perfil) -->
+            <article class="about-intro-block">
+              <h2 data-i18n="about.introTitle">Un poco sobre mí</h2>
+              <p data-i18n="about.intro" data-i18n-html>
+                Soy
+                <strong>Desarrollador de Sistemas de Información</strong>, con
+                experiencia en el análisis, desarrollo e implementación de
+                soluciones tecnológicas para empresas. Me interesa conectar la
+                tecnología con las necesidades del negocio, optimizando procesos
+                y facilitando la gestión de la información.
+              </p>
+              <p
+                data-i18n="about.profile"
+                data-i18n-html
+                data-birth-date="2005-07-31"
+              >
+                Con <span data-age></span> años, me considero una persona
+                autodidacta, adaptable y comprometida. Disfruto enfrentar nuevos
+                retos, explorar diferentes herramientas y salir de mi zona de
+                confort para adquirir nuevos conocimientos.
+              </p>
+            </article>
 
-              <div class="about-tab-options">
-                <label
-                  class="about-tab"
-                  for="about-profile"
-                  data-i18n="about.tabs.profile"
-                >
-                  Perfil
-                </label>
-                <label
-                  class="about-tab"
-                  for="about-story"
-                  data-i18n="about.tabs.story"
-                >
-                  Historia
-                </label>
-                <label
-                  class="about-tab"
-                  for="about-learning"
-                  data-i18n="about.tabs.learning"
-                >
-                  Formación
-                </label>
-              </div>
+            <!-- Dos columnas inferiores: Historia + Formación -->
+            <div class="about-columns">
+              <article class="about-column">
+                <h2 data-i18n="about.storyTitle">¿Cómo conocí este mundo?</h2>
+                <p data-i18n="about.story">
+                  Mi interés por la tecnología nació de la curiosidad por
+                  entender cómo funcionan las cosas y cómo pueden convertirse en
+                  soluciones útiles. Con el tiempo, esa curiosidad se transformó
+                  en una motivación por aprender, experimentar y desarrollar mis
+                  propias soluciones.
+                </p>
+              </article>
 
-              <div class="about-panels">
-                <article class="about-panel about-panel-profile">
-                  <h2 data-i18n="about.introTitle">Un poco sobre mí</h2>
-                  <p data-i18n="about.intro" data-i18n-html>
-                    Soy
-                    <strong>Desarrollador de Sistemas de Información</strong>,
-                    con experiencia en el análisis, desarrollo e implementación
-                    de soluciones tecnológicas para empresas. Me interesa
-                    conectar la tecnología con las necesidades del negocio,
-                    optimizando procesos y facilitando la gestión de la
-                    información.
-                  </p>
-                  <p
-                    data-i18n="about.profile"
-                    data-i18n-html
-                    data-birth-date="2005-07-31"
-                  >
-                    Con <span data-age></span> años, me considero una persona
-                    autodidacta, adaptable y comprometida. Disfruto enfrentar
-                    nuevos retos, explorar diferentes herramientas y salir de mi
-                    zona de confort para adquirir nuevos conocimientos.
-                  </p>
-                </article>
+              <article class="about-column">
+                <h2 data-i18n="about.learningTitle">
+                  Mi camino de aprendizaje
+                </h2>
+                <p data-i18n="about.learningStart" data-i18n-html>
+                  A los 17 años decidí profundizar por mi cuenta en el mundo de
+                  la tecnología. Comencé con un libro de programación y, gracias
+                  al acceso a <strong>Platzi</strong> que me brindó un familiar
+                  cercano, descubrí nuevas áreas y recursos que despertaron aún
+                  más mi interés por seguir aprendiendo.
+                </p>
+                <p data-i18n="about.education" data-i18n-html>
+                  A los 19 años inicié mi formación profesional en
+                  <strong>INSTITUTO SUPERIOR TECNOLÓGICO IDAT</strong>, donde,
+                  mediante docentes exigentes y una formación orientada a la
+                  práctica, fortalecí mis conocimientos en desarrollo de
+                  sistemas, bases de datos, análisis y gestión de proyectos.
+                  Esta etapa me permitió dar el salto al entorno laboral y
+                  prepararme para afrontar proyectos y desafíos de mayor
+                  complejidad.
+                </p>
 
-                <article class="about-panel about-panel-story">
-                  <h2 data-i18n="about.storyTitle">¿Cómo conocí este mundo?</h2>
-                  <p data-i18n="about.story">
-                    Mi interés por la tecnología nació de la curiosidad por
-                    entender cómo funcionan las cosas y cómo pueden convertirse
-                    en soluciones útiles. Con el tiempo, esa curiosidad se
-                    transformó en una motivación por aprender, experimentar y
-                    desarrollar mis propias soluciones.
-                  </p>
-                </article>
-
-                <article class="about-panel about-panel-learning">
-                  <h2 data-i18n="about.learningTitle">
-                    Mi camino de aprendizaje
-                  </h2>
-                  <p data-i18n="about.learningStart" data-i18n-html>
-                    A los 17 años decidí profundizar por mi cuenta en el mundo
-                    de la tecnología. Comencé con un libro de programación y,
-                    gracias al acceso a <strong>Platzi</strong> que me brindó un
-                    familiar cercano, descubrí nuevas áreas y recursos que
-                    despertaron aún más mi interés por seguir aprendiendo.
-                  </p>
-                  <p data-i18n="about.education" data-i18n-html>
-                    A los 19 años inicié mi formación profesional en
-                    <strong>INSTITUTO SUPERIOR TECNOLÓGICO IDAT</strong>, donde,
-                    mediante docentes exigentes y una formación orientada a la
-                    práctica, fortalecí mis conocimientos en desarrollo de
-                    sistemas, bases de datos, análisis y gestión de proyectos.
-                    Esta etapa me permitió dar el salto al entorno laboral y
-                    prepararme para afrontar proyectos y desafíos de mayor
-                    complejidad.
-                  </p>
-                </article>
-              </div>
-            </fieldset>
+                <div class="about-logos">
+                  <img
+                    src="./images/logo-idat.webp"
+                    alt="Instituto Superior Tecnológico IDAT"
+                    class="about-logo-img about-logo-light"
+                  />
+                  <img
+                    src="./images/logo-idat-blanco.webp"
+                    alt="Instituto Superior Tecnológico IDAT"
+                    class="about-logo-img about-logo-dark"
+                  />
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -507,18 +489,6 @@
                 <div class="technology-list">
                   <span class="technology-item"
                     ><img
-                      src="./images/tecnologias/php-svgrepo-com.webp"
-                      alt=""
-                    />PHP</span
-                  >
-                  <span class="technology-item"
-                    ><img
-                      src="./images/tecnologias/laravel-svgrepo-com.webp"
-                      alt=""
-                    />Laravel</span
-                  >
-                  <span class="technology-item"
-                    ><img
                       src="./images/tecnologias/java-original.webp"
                       alt=""
                     />Java</span
@@ -526,6 +496,12 @@
                   <span class="technology-item"
                     ><img src="./images/tecnologias/spring.webp" alt="" />Spring
                     Boot</span
+                  >
+                  <span class="technology-item"
+                    ><img
+                      src="./images/tecnologias/php-svgrepo-com.webp"
+                      alt=""
+                    />PHP</span
                   >
                   <span class="technology-item"
                     ><img
@@ -617,10 +593,8 @@
                     ><img src="./images/tecnologias/git.webp" alt="" />Git</span
                   >
                   <span class="technology-item"
-                    ><img
-                      src="./images/tecnologias/github.webp"
-                      alt=""
-                    />GitHub Actions</span
+                    ><img src="./images/tecnologias/github.webp" alt="" />GitHub
+                    Actions</span
                   >
                   <span class="technology-item"
                     ><img
@@ -639,7 +613,7 @@
                       src="./images/tecnologias/postman.webp"
                       alt=""
                     />Postman</span
-                  >                  
+                  >
                   <span class="technology-item"
                     ><img
                       src="./images/tecnologias/openapi.webp"
@@ -670,19 +644,120 @@
             <span data-i18n="section.projects">PORTAFOLIO / PROYECTOS</span>
           </div>
 
-          <!-- <div class="knowledge-heading">
-              <h2 data-i18n="knowledge.title">PROYECTOS</h2>
-              <p data-i18n="knowledge.summary">
-                Selección de proyectos y laboratorios técnicos enfocados en la ingeniería backend, arquitectura de microservicios y lógica de servidor, utilizando tecnologías como Java (Spring Boot), PHP y C#.
-              </p>
-            </div> -->
+          <div class="projects-content">
+            <div
+              class="projects-filters"
+              role="group"
+              aria-label="Filtrar proyectos"
+            >
+              <button
+                type="button"
+                class="project-filter is-active"
+                data-filter="all"
+              >
+                Todos
+              </button>
+              <button type="button" class="project-filter" data-filter="api">
+                API Services
+              </button>
+              <button
+                type="button"
+                class="project-filter"
+                data-filter="fullstack"
+              >
+                Full Stack
+              </button>
+              <button
+                type="button"
+                class="project-filter"
+                data-filter="webapps"
+              >
+                Web Apps
+              </button>
+            </div>
 
-          
+            <article
+              class="project-showcase"
+              data-category="api"
+              data-images='[
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-01.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-02.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-03.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-04.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-05.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-06.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-07.webp",
+      "/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-08.webp"
+    ]'
+            >
+              <div class="project-carousel">
+                <img
+                  src="/images/proyectos/sysmart-travel-backend/sysmart-travel-backend-01.webp"
+                  alt="Captura de sysmart-travel-backend"
+                  class="project-carousel-img"
+                />
+                <button
+                  type="button"
+                  class="carousel-btn carousel-prev"
+                  aria-label="Imagen anterior"
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  class="carousel-btn carousel-next"
+                  aria-label="Siguiente imagen"
+                >
+                  ›
+                </button>
+              </div>
 
+              <div class="project-info">
+                <span class="project-status"
+                  >● PROYECTO DESTACADO · BACKEND &amp; RAG</span
+                >
+                <h3>SysMart Travel</h3>
+                <p class="project-description">
+                  API REST para un ERP B2B de agencias mayoristas de viajes con
+                  arquitectura desacoplada y dominios feature-based (seguridad,
+                  agencias, operadores, monedas, destinos, promociones con
+                  migración desde PHP legacy, paquetes y cotizaciones). Integra
+                  autenticación stateless con JWT y RBAC, migraciones
+                  versionadas con Flyway, búsqueda vectorial con pgvector y chat
+                  RAG con Google Gemini (embeddings por lotes con manejo de
+                  cuotas y reemplazo transaccional seguro del índice).
+                </p>
 
-          
+                <div class="project-tags">
+                  <span>Java 21</span>
+                  <span>Spring Boot 4</span>
+                  <span>Spring Security &amp; JWT</span>
+                  <span>PostgreSQL</span>
+                  <span>Flyway</span>
+                  <span>pgvector</span>
+                  <span>Google Gemini (RAG)</span>
+                  <span>OpenAPI / Swagger</span>
+                  <span>Docker / Render</span>
+                </div>
 
-          
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/adrivng/sysmart-travel-backend"
+                    class="project-btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="/images/tecnologias/github.webp"
+                      alt="GitHub"
+                      class="project-github-icon"
+                    />
+                    <span>Ver en GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </section>
 
         <!-- CONTACTO -->
@@ -752,13 +827,29 @@
                 ></textarea>
               </div>
 
-              <button
-                class="contact-submit"
-                type="submit"
-                data-i18n="contact.submit"
-              >
-                Enviar mensaje
-              </button>
+              <div class="contact-actions">
+                <button
+                  class="contact-submit"
+                  type="submit"
+                  data-i18n="contact.submit"
+                >
+                  Enviar mensaje
+                </button>
+
+                <button
+                  type="button"
+                  class="contact-copy-email"
+                  id="copy-email-btn"
+                  aria-label="Copiar correo de contacto"
+                >
+                  <span id="copy-email-label">Copiar correo</span>
+                  <span
+                    class="contact-copy-feedback"
+                    id="copy-email-feedback"
+                    aria-live="polite"
+                  ></span>
+                </button>
+              </div>
             </form>
           </div>
         </section>
@@ -807,12 +898,55 @@
       <span aria-hidden="true">↑</span>
     </a>
 
+    <!-- MODAL / LIGHTBOX DE PROYECTOS -->
+    <div
+      class="project-lightbox"
+      id="project-lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Vista ampliada de captura"
+      aria-hidden="true"
+    >
+      <div class="project-lightbox-backdrop" data-lightbox-close></div>
+
+      <div class="project-lightbox-dialog">
+        <button
+          type="button"
+          class="project-lightbox-close"
+          aria-label="Cerrar vista ampliada"
+          data-lightbox-close
+        >
+          ×
+        </button>
+
+        <div class="project-lightbox-frame">
+          <img src="" alt="" class="project-lightbox-img" />
+          <button
+            type="button"
+            class="carousel-btn carousel-prev lightbox-prev"
+            aria-label="Imagen anterior"
+          >
+            ‹
+          </button>
+          <button
+            type="button"
+            class="carousel-btn carousel-next lightbox-next"
+            aria-label="Siguiente imagen"
+          >
+            ›
+          </button>
+        </div>
+
+        <div class="project-lightbox-footer">
+          <span class="project-lightbox-counter">1 / 8</span>
+        </div>
+      </div>
+    </div>
+
     <script>
-      // Seleccionar las secciones y enlaces del menú
       const sections = document.querySelectorAll("main section");
       const navLinks = document.querySelectorAll("nav a");
 
-      // Crear el observador
       const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
@@ -824,17 +958,14 @@
             }
 
             if (entry.isIntersecting) {
-              // Quitar la clase activa de todos los enlaces
               navLinks.forEach((link) => {
                 link.classList.remove("active");
               });
 
-              // Buscar el enlace correspondiente a la sección visible
               const activeLink = document.querySelector(
                 `nav a[href="#${entry.target.id}"]`,
               );
 
-              // Activar el enlace
               if (activeLink) {
                 activeLink.classList.add("active");
               }
@@ -847,7 +978,6 @@
         },
       );
 
-      // Observar todas las secciones
       sections.forEach((section) => {
         observer.observe(section);
       });
@@ -887,42 +1017,6 @@
 
       window.matchMedia("(min-width: 769px)").addEventListener("change", () => {
         setMenuOpen(false);
-      });
-
-      const contactForm = document.querySelector("#contact-form");
-
-      contactForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const recipient =
-          String.fromCharCode(
-            103,
-            105,
-            97,
-            110,
-            99,
-            97,
-            114,
-            100,
-            101,
-            110,
-            97,
-            115,
-            49,
-            56,
-          ) + "@gmail.com";
-        const formData = new FormData(contactForm);
-        const fullName = `${formData.get("nombres")} ${formData.get("apellidos")}`;
-        const isEnglish = document.documentElement.lang === "en";
-        const subject = `${isEnglish ? "Portfolio contact" : "Contacto desde el portafolio"}: ${fullName}`;
-        const body = [
-          `${isEnglish ? "Name" : "Nombre"}: ${fullName}`,
-          `${isEnglish ? "Email" : "Correo"}: ${formData.get("correo")}`,
-          "",
-          formData.get("mensaje"),
-        ].join("\n");
-
-        window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
       });
 
       const backToTop = document.querySelector(".back-to-top");
