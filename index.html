@@ -485,7 +485,7 @@
 
             <div class="knowledge-grid">
               <article class="technology-category">
-                <h3>Backend</h3>
+                <h3 data-i18n="knowledge.backend">Backend</h3>
                 <div class="technology-list">
                   <span class="technology-item"
                     ><img
@@ -514,6 +514,49 @@
                       src="./images/tecnologias/python.webp"
                       alt=""
                     />Python</span
+                  >
+                </div>
+              </article>
+
+              <article class="technology-category">
+                <h3 data-i18n="knowledge.integration">Eventos e integración</h3>
+                <div class="technology-list">
+                  <span class="technology-item"
+                    ><img
+                      src="./images/tecnologias/openapi.webp"
+                      alt=""
+                    />OpenAPI</span
+                  >
+                </div>
+              </article>
+
+              <article class="technology-category">
+                <h3 data-i18n="knowledge.devops">Cloud y DevOps</h3>
+                <div class="technology-list">
+                  <span class="technology-item"
+                    ><img src="./images/tecnologias/github.webp" alt="" />GitHub
+                    Actions</span
+                  >
+                  <span class="technology-item"
+                    ><img src="./images/tecnologias/git.webp" alt="" />Git</span
+                  >
+                  <span class="technology-item"
+                    ><img
+                      src="./images/tecnologias/docker.webp"
+                      alt=""
+                    />Docker</span
+                  >
+                </div>
+              </article>
+
+              <article class="technology-category">
+                <h3 data-i18n="knowledge.quality">Calidad y observabilidad</h3>
+                <div class="technology-list">
+                  <span class="technology-item"
+                    ><img
+                      src="./images/tecnologias/postman.webp"
+                      alt=""
+                    />Postman</span
                   >
                 </div>
               </article>
@@ -549,7 +592,7 @@
               </article>
 
               <article class="technology-category">
-                <h3>Frontend</h3>
+                <h3 data-i18n="knowledge.frontendMobile">Frontend y móvil</h3>
                 <div class="technology-list">
                   <span class="technology-item"
                     ><img
@@ -581,51 +624,6 @@
                       alt=""
                     />Bootstrap</span
                   >
-                </div>
-              </article>
-
-              <article class="technology-category">
-                <h3 data-i18n="knowledge.tools">
-                  Herramientas y control de versiones
-                </h3>
-                <div class="technology-list">
-                  <span class="technology-item"
-                    ><img src="./images/tecnologias/git.webp" alt="" />Git</span
-                  >
-                  <span class="technology-item"
-                    ><img src="./images/tecnologias/github.webp" alt="" />GitHub
-                    Actions</span
-                  >
-                  <span class="technology-item"
-                    ><img
-                      src="./images/tecnologias/docker.webp"
-                      alt=""
-                    />Docker</span
-                  >
-                </div>
-              </article>
-
-              <article class="technology-category">
-                <h3 data-i18n="knowledge.apis">APIs y testing</h3>
-                <div class="technology-list">
-                  <span class="technology-item"
-                    ><img
-                      src="./images/tecnologias/postman.webp"
-                      alt=""
-                    />Postman</span
-                  >
-                  <span class="technology-item"
-                    ><img
-                      src="./images/tecnologias/openapi.webp"
-                      alt=""
-                    />OpenAPI</span
-                  >
-                </div>
-              </article>
-
-              <article class="technology-category">
-                <h3 data-i18n="knowledge.other">Otros</h3>
-                <div class="technology-list">
                   <span class="technology-item"
                     ><img
                       src="./images/tecnologias/kotlin.webp"
@@ -673,6 +671,13 @@
                 data-filter="webapps"
               >
                 Web Apps
+              </button>
+              <button
+                type="button"
+                class="project-filter"
+                data-filter="webapps"
+              >
+                Landing Pages
               </button>
             </div>
 
@@ -747,12 +752,91 @@
                     target="_blank"
                     rel="noopener noreferrer"
                   >
+                    <span>Ver en GitHub</span>
                     <img
                       src="./images/tecnologias/github.webp"
                       alt="GitHub"
                       class="project-github-icon"
                     />
+                  </a>
+                </div>
+              </div>
+            </article>
+            <br />
+            <article
+              class="project-showcase"
+              data-category="api"
+              data-images='[
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-01.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-02.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-03.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-04.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-05.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-06.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-07.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-08.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-09.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-10.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-11.webp",
+      "./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-12.webp"
+    ]'
+            >
+              <div class="project-carousel">
+                <img
+                  src="./images/proyectos/gestion-matriculas-microservices/gestion-matriculas-microservices-01.webp"
+                  alt="Captura de gestion-matriculas-microservices"
+                  class="project-carousel-img"
+                />
+                <button
+                  type="button"
+                  class="carousel-btn carousel-prev"
+                  aria-label="Imagen anterior"
+                >
+                  ‹
+                </button>
+                <button
+                  type="button"
+                  class="carousel-btn carousel-next"
+                  aria-label="Siguiente imagen"
+                >
+                  ›
+                </button>
+              </div>
+
+              <div class="project-info">
+                <!--  <span class="project-status"
+                  >● PROYECTO DESTACADO · BACKEND &amp; RAG</span
+                > -->
+                <h3>Gestión de Matriculas Microservicios</h3>
+                <p class="project-description">
+                  Arquitectura backend distribuida para la gestión académica de
+                  estudiantes, cursos y matrículas. Este proyecto implementa
+                  patrones de diseño de microservicios, seguridad perimetral con
+                  OAuth2/OpenID Connect y despliegue contenedorizado.
+                </p>
+
+                <div class="project-tags">
+                  <span>Java 21</span>
+                  <span>Spring Boot 3</span>
+                  <span>Spring Cloud</span>
+                  <span>PostgreSQL</span>
+                  <span>Docker</span>
+                  <span>Keycloak OAuth2</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/adrivng/gestion-matriculas-microservices"
+                    class="project-btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>Ver en GitHub</span>
+                    <img
+                      src="./images/tecnologias/github.webp"
+                      alt="GitHub"
+                      class="project-github-icon"
+                    />
                   </a>
                 </div>
               </div>
@@ -1036,5 +1120,53 @@
       updateBackToTop();
     </script>
     <script src="scripts.js"></script>
+    <script>
+      /* ==========================================
+   ANIMACIÓN AUTOMÁTICA AL HACER SCROLL
+========================================== */
+
+      const revealElements = document.querySelectorAll(`
+    main h1,
+    main h2,
+    main h3,
+    main h4,
+    main p,
+    main li,
+    main .section-header-info > span,
+    main .technology-item,
+    main .project-tags span,
+    main .project-status,
+    main .hero-buttons a,
+    main .project-actions a,
+    main .experience-item,
+    main .technology-category,
+    main .project-showcase,
+    main .about-intro-block,
+    main .about-column,
+    main .contact-field,
+    main .contact-actions
+`);
+
+      const revealObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+            } else {
+                entry.target.classList.remove("is-visible");
+            }
+        });
+    },
+    {
+        threshold: 0.12,
+        rootMargin: "0px 0px -30px 0px"
+    }
+);
+
+revealElements.forEach((element) => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+});
+    </script>
   </body>
 </html>

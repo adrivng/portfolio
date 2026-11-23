@@ -236,22 +236,32 @@
       "es": "Conocimientos y herramientas que aplico para desarrollar soluciones, gestionar información y construir aplicaciones.",
       "en": "Knowledge and tools I use to develop solutions, manage information, and build applications."
     },
+    { "clave": "knowledge.backend", "es": "Backend", "en": "Backend" },
+    {
+      "clave": "knowledge.integration",
+      "es": "Eventos e integración",
+      "en": "Events & Integration"
+    },
+    {
+      "clave": "knowledge.devops",
+      "es": "Cloud y DevOps",
+      "en": "Cloud & DevOps"
+    },
+    {
+      "clave": "knowledge.quality",
+      "es": "Calidad y observabilidad",
+      "en": "Quality & Observability"
+    },
     {
       "clave": "knowledge.databases",
       "es": "Bases de datos",
       "en": "Databases"
     },
     {
-      "clave": "knowledge.tools",
-      "es": "Herramientas y control de versiones",
-      "en": "Tools and version control"
+      "clave": "knowledge.frontendMobile",
+      "es": "Frontend y móvil",
+      "en": "Frontend & Mobile"
     },
-    {
-      "clave": "knowledge.apis",
-      "es": "APIs y testing",
-      "en": "APIs and testing"
-    },
-    { "clave": "knowledge.other", "es": "Otros", "en": "Other" },
     { "clave": "contact.title", "es": "Hablemos", "en": "Let's talk" },
     {
       "clave": "contact.summary",
